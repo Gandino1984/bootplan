@@ -1,9 +1,12 @@
 // import { useState } from 'react'
 
-import './UserView.css'
+import './UserView.css';
+
+
+import UserInput from '../UserInput/UserInput.jsx';
+
 
 export function UserView({userName, userHandle}){
-
     return(
         <div className='user-view-article'>
            <header className='user-view-header'>
