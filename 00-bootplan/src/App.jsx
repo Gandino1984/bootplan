@@ -1,9 +1,11 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 
 import './App.css'
 
-function App() {
-  
+export function App() {
+        return(
+            <div><h1>user view app</h1></div>
+        )
 }
 
 export default App
