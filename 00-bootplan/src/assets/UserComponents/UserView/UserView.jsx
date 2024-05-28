@@ -3,9 +3,11 @@
 import './UserView.css'
 
 export function UserView() {
-        return(
-            <div><h1>user view</h1></div>
-        )
+    return(
+        <article>
+            <h1>user name</h1>
+        </article>
+    )
 }
 
 export default UserView
