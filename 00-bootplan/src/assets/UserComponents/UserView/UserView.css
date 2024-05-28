@@ -2,12 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
+    color: #222222;
     font-size: .8rem;
-    background-color: #535353;
     border-radius: 9px;
     animation-name: slideUp;
     animation-duration: 1.5s;
+    background-color: #33333311;
 }
 
 .user-view-header{
@@ -22,7 +22,7 @@
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
-    border: 2px solid #ffffff; 
+    border: 2px solid #222222; 
 }
 
 .user-view-userHandle{
