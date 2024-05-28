@@ -6,6 +6,8 @@
     font-size: .8rem;
     background-color: #535353;
     border-radius: 9px;
+    animation-name: slideUp;
+    animation-duration: 1.5s;
 }
 
 .user-view-header{
@@ -17,8 +19,8 @@
 }
 
 .user-view-avatar{
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
     border: 2px solid #ffffff; 
 }
@@ -26,3 +28,10 @@
 .user-view-userHandle{
     opacity: .7;
 }
+
+ 
+ @keyframes slideUp {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+  }
+   
