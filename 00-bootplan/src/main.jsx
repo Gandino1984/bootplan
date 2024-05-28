@@ -5,15 +5,10 @@ import './index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const createButton = ({buttonText}) => {
-  return(
-    <button>{buttonText}</button>
-  );
-}
 
 
 root.render(
-  <>
-      {createButton({"buttonText":"botón"})}
-  </>
+  <div>
+    user view
+  </div>
 );
