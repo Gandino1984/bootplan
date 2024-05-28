@@ -1,0 +1,28 @@
+.user-view-article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: .8rem;
+    background-color: #535353;
+    border-radius: 9px;
+}
+
+.user-view-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: .6rem 1rem;
+}
+
+.user-view-avatar{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 2px solid #ffffff; 
+}
+
+.user-view-userHandle{
+    opacity: .7;
+}
