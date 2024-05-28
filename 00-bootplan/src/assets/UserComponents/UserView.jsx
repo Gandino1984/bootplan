@@ -4,7 +4,7 @@ import './UserView.css'
 
 export function UserView() {
         return(
-            <div><h1>user view app</h1></div>
+            <div><h1>user view</h1></div>
         )
 }
 
