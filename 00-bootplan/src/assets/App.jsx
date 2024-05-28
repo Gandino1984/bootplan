@@ -5,6 +5,7 @@ import UserView from './UserComponents/UserView/UserView.jsx';
     return(
         <>
             <UserView userName="German Andino" userHandle="germanandino" />
+            
         </>   
     )
 
