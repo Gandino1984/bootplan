@@ -7,5 +7,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
 root.render(
-  <UserView />
+  <>
+    <UserView userName='German Andino' userHandle='germanandino'/>
+  </>
+  
 );
