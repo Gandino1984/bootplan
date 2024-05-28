@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
+// import UserView from '../UserView/UserView.jsx';
 
 import './UserInput.css'
 
 
 export function UserInput() {
-  console.log("RENDER: UserInput");
-  
+
   const [userName, setUserName] = useState('');
-  const [avatar, setAvatar] = useState('');
+  const [userAvatar, setAvatar] = useState('');
 
   const handleUserNameChange = (event) => {
     setUserName(event.target.value);
@@ -20,8 +20,7 @@ export function UserInput() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Username:', userName, 'Avatar:', avatar);
-    // Aquí puedes agregar la lógica para manejar el envío del formulario
+    console.log('Username:', userName, 'User Avatar:', userAvatar);
   };
 
   return (
@@ -35,7 +34,7 @@ export function UserInput() {
         />
         <input
           type="text"
-          value={avatar}
+          value={userAvatar}
           onChange={handleAvatarChange}
           placeholder="avatar"
         />
