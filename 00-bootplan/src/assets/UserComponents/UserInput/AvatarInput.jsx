@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 // import './UserInput.css';
 
-
 export default function AvatarInput({onChange}) {
   
   function AvatarInputHandler(e){
