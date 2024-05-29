@@ -10,17 +10,16 @@ import './UserRegister.css'
 export function UserRegister(){
 
     const [userName, setUserName] = useState('');
-    const [userAvatar, setUserHandle] = useState('');
+    const [userAvatar, setUserHandle] = useState(''); 
 
-    const handleFormSubmit = (name, avatar) => {
-        setUserName(name);
-        setUserHandle(avatar);
+    const handleFormSubmit = ({userName}, {userAvatar}) => {
+        setUserName(userName);
+        setUserHandle(userAvatar);
     };
 
     return (
         <>
           <UserInput onFormSubmit={handleFormSubmit} />
-          <UserView userName={userName} userHandle={userAvatar} />
         </>
       );
 

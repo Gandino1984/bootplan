@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-// import UserView from '../UserView/UserView.jsx';
+import UserView from '../UserView/UserView.jsx';
 
-import './UserInput.css'
+import './UserInput.css';
 
 
 export function UserInput() {
-
   const [userName, setUserName] = useState('');
   const [userAvatar, setAvatar] = useState('');
+
+  
 
   const handleUserNameChange = (event) => {
     setUserName(event.target.value);
@@ -20,11 +21,11 @@ export function UserInput() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Username:', userName, 'User Avatar:', userAvatar);
   };
 
   return (
     <div className='user-input-formContainer'>
+      <UserView userName={userName} userHandle={userAvatar}/ >;
       <form onSubmit={handleSubmit}>
         <input
           type="text"
