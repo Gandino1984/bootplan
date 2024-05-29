@@ -1,24 +1,25 @@
 import React from 'react';
-import { useState } from 'react';
+// import { useState } from 'react';
 
-export function UserView({userName, userHandle}) {
-    console.log("UserView props: ", {userName, userHandle});
+export default function UserView({userName, userAvatar}) {
+
+  let userNameString = "Nombre de usuario";
+s
+  if(userName){
+    userNameString = userName;
+  }
+
   return (
     <div className='user-view-article'>
-      <header className='user-view-header'>
         <img
           className='user-view-avatar'
-          alt='user avatar'
-          src={`https://unavatar.io/${userHandle}`}
+          alt='Avatar'
+          src={`https://unavatar.io/${userAvatar}`}
         />
         <div className='user-view-userNameContainer'>
-          <h1 className='user-view-userName'>{userName}</h1>
-          <h3 className='user-view-userHandle'>@{userHandle}</h3>
+          <h1 className='user-view-userName'>{userNameString}</h1>
+          <h3 className='user-view-userHandle'>@{userAvatar}</h3>
         </div>
-      </header>
     </div>
   );
 }
-
-
-export default UserView;

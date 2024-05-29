@@ -1,17 +1,10 @@
-import { UserRegister } from './UserComponents/UserRegister/UserRegister.jsx';
-import './App.css'
-import UserView from './UserComponents/UserView/UserView.jsx'
-import ProyectCard from './ProyectComponents/ProyectCard/ProyectCard.jsx'
+import UserRegisterModal from "./UserComponents/UserInput/UserRegisterModal.jsx";
 
- function App(){
- 
+ export default function App(){
     return(
         <>
-            <UserRegister />      
-            {/* <ProyectCard /> */}
-        </>   
+            <UserRegisterModal /> 
+        </>
+          
     )
-
-  }
-
-export default App
+}
