@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import UserInput from '../UserInput/UserInput.jsx';
 
+import AvatarInput from '../UserInput/AvatarInput.jsx';
+
 import UserView from '../UserView/UserView.jsx';
 
 import './UserRegister.css' 
@@ -10,16 +12,14 @@ import './UserRegister.css'
 export function UserRegister(){
 
     const [userName, setUserName] = useState('');
-    const [userAvatar, setUserHandle] = useState(''); 
 
-    const handleFormSubmit = ({userName}, {userAvatar}) => {
-        setUserName(userName);
-        setUserHandle(userAvatar);
-    };
+    const [userAvatar, setUserAvatar] = useState(''); 
 
-    return (
+    return(
         <>
-          <UserInput onFormSubmit={handleFormSubmit} />
+          <UserInput onChange={setUserName} />
+          <AvatarInput onChange={setUserAvatar} />
+          <UserView userName={userName} userAvatar={userAvatar} />
         </>
       );
 
