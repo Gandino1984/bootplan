@@ -14,4 +14,3 @@ import ProyectCard from './ProyectComponents/ProyectCard/ProyectCard.jsx'
 
   }
 
-export default App
