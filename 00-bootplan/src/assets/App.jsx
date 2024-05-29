@@ -8,4 +8,3 @@ import UserRegisterModal from "./UserComponents/UserInput/UserRegisterModal.jsx"
           
     )
 }
-
