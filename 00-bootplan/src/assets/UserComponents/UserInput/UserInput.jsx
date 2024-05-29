@@ -18,6 +18,6 @@ export default function UserInput({onChange}) {
           placeholder="Nombre de usuario aquí"
         />
         
-  );
+  )
 }
 

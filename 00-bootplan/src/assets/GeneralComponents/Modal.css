@@ -1,0 +1,19 @@
+.modal-darkBackground{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000043;
+    width:100vw;
+    height: 100vh;
+}
+
+.modal-mainContainer{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
