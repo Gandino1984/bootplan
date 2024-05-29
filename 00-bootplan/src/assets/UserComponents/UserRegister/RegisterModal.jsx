@@ -6,12 +6,10 @@ import AvatarInput from '../UserInput/AvatarInput.jsx';
 
 import UserView from '../UserView/UserView.jsx';
 
-import './UserRegister.css' 
+import './RegisterModal.css' 
 
 
-export function UserRegister(){
-
-  
+export function RegisterModal(){
 
     const [userName, setUserName] = useState('');
 
@@ -26,3 +24,5 @@ export function UserRegister(){
       );
 
 }
+
+export default RegisterModal;

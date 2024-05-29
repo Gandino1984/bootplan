@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-// import './UserInput.css';
+// import './AvatarInput.css';
 
 export default function AvatarInput({onChange}) {
   

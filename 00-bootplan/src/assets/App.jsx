@@ -1,13 +1,9 @@
-import { UserRegister } from './UserComponents/UserRegister/UserRegister.jsx';
+import { RegisterModal } from './UserComponents/UserRegister/RegisterModal.jsx';
 
- function App(){
-    
+ export default function App(){
     return(
         <>
-            <UserRegister />
+            <RegisterModal />
         </>   
     )
-
 }
-
-export default App;
