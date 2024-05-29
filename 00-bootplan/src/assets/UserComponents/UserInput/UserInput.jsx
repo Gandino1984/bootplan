@@ -25,7 +25,7 @@ export function UserInput() {
 
   return (
     <div className='user-input-formContainer'>
-      <UserView userName={userName} userHandle={userAvatar}/ >;
+      <UserView userName={userName} userHandle={userAvatar}/ >
       <form onSubmit={handleSubmit}>
         <input
           type="text"
