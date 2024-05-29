@@ -1,10 +1,10 @@
-import UserView from './UserComponents/UserView/UserView.jsx';
+import { UserRegister } from './UserComponents/UserRegister/UserRegister.jsx';
 
  function App(){
     
     return(
         <>
-            <UserView userName="German Andino" userHandle="germanandino" />
+            <UserRegister />
         </>   
     )
 
