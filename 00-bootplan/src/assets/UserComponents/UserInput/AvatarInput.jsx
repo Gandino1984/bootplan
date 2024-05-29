@@ -11,11 +11,16 @@ export function AvatarInput({onChange}) {
   }
 
   return (
-        <input
-          type="text"
-          onChange={AvatarInputHandler}
-          placeholder="@ <Github/Telegram/Instagram...>"
-        />
+        <>
+          <label for="avatar">Tu Avatar: </label>
+          <input
+            type="text"
+            id="avatar"
+            onChange={AvatarInputHandler}
+            placeholder="@ <Github/Telegram/Instagram...>"
+          />
+        </>
+        
   );
 }
 

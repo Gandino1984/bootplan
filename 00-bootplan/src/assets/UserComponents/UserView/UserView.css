@@ -2,12 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #222222;
+    background-color: #22222226;
     font-size: .8rem;
     border-radius: 9px;
-    animation-name: slideUp;
-    animation-duration: 1.5s;
-    background-color: #33333311;
+    padding: .5rem;
+    animation-name: showUserView;
+    animation-duration: 2.8s;
+    -webkit-animation-iteration-count: 1;
 }
 
 .user-view-header{
@@ -19,18 +20,20 @@
 }
 
 .user-view-avatar{
-    width: 7rem;
-    height: 7rem;
+    margin-right: .5rem;
+    padding: .1rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
-    border: 2px solid #222222; 
+    border: 2.5px solid #222222; 
 }
 
 .user-view-userHandle{
-    opacity: .7;
+    opacity: .65;
 }
 
  
- @keyframes slideUp {
+ @keyframes showUserView {
     0%   {opacity: 0;}
     100% {opacity: 1;}
   }
