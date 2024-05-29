@@ -1,16 +1,18 @@
 
 import './Modal.css' 
 
-
-export default function Modal(){
+export function Modal(){
   return(
-    <div className='modal-darkBackground'>
-      <div className='modal-mainContainer'>
-        
+    <>
+      <div className='modal-darkBackground'>
+        <div className='modal-mainContainer'>        
+        </div>
       </div>
-    </div>
+    </>
+    
   )
 }
 
 
 
+export default Modal;

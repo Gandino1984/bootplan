@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './UserInput.css';
 
 
-export default function UserInput({onChange}) {
+export function UserInput({onChange}) {
   
   function UserInputHandler(e){
     e.preventDefault();
@@ -20,4 +20,6 @@ export default function UserInput({onChange}) {
         
   )
 }
+
+export default UserInput;
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 // import './AvatarInput.css';
 
-export default function AvatarInput({onChange}) {
+export function AvatarInput({onChange}) {
   
   function AvatarInputHandler(e){
     e.preventDefault();
@@ -19,3 +19,4 @@ export default function AvatarInput({onChange}) {
   );
 }
 
+export default AvatarInput;

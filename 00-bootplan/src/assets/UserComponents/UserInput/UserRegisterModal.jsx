@@ -8,17 +8,24 @@ import AvatarInput from './AvatarInput.jsx';
 
 import UserView from '../UserView/UserView.jsx';
 
-export default function UserRegisterModal(){
+
+export function UserRegisterModal(){
 
     const [userName, setUserName] = useState('');
 
     const [userAvatar, setUserAvatar] = useState(''); 
 
     return(
-        <Modal>
-            <UserInput onChange={setUserName} />
-            <AvatarInput onChange={setUserAvatar} />
-            <UserView userName={userName} userAvatar={userAvatar} />
-        </Modal>
+        <>
+            <Modal>
+                <p>Ingresa tus datos</p>
+                <UserInput onChange={setUserName} />
+                <AvatarInput onChange={setUserAvatar} />
+                <UserView userName={userName} userAvatar={userAvatar} />
+            </Modal>
+        </>
+        
     )
 }
+
+export default UserRegisterModal;

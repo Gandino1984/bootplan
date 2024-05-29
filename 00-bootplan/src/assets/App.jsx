@@ -1,10 +1,10 @@
-import UserRegisterModal from "./UserComponents/UserInput/UserRegisterModal.jsx";
+import React from 'react'
 
- export default function App(){
-    return(
+export function App() {
+    return (
         <>
-            <UserRegisterModal /> 
         </>
-          
-    )
+    );
 }
+
+export default App;
