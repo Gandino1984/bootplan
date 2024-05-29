@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 
-import Modal from "../../GeneralComponents/Modal.jsx";
-
 import UserInput from './UserInput.jsx';
 
 import AvatarInput from './AvatarInput.jsx';
 
 import UserView from '../UserView/UserView.jsx';
 
+import './UserRegisterModal.css';
 
 export function UserRegisterModal(){
 
@@ -16,16 +15,14 @@ export function UserRegisterModal(){
     const [userAvatar, setUserAvatar] = useState(''); 
 
     return(
-        <>
-            <Modal>
-                <p>Ingresa tus datos</p>
+        <div className='user-register-modalMainContainer'>
+            <div className='user-register-inputViewContainer'>
                 <UserInput onChange={setUserName} />
                 <AvatarInput onChange={setUserAvatar} />
                 <UserView userName={userName} userAvatar={userAvatar} />
-            </Modal>
-        </>
-        
-    )
+            </div>
+        </div>
+    );
 }
 
 export default UserRegisterModal;

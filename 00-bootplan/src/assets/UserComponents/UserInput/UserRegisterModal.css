@@ -1,0 +1,13 @@
+.user-register-modalMainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000003d;
+    width: 100vw;
+    height: 100vh;
+}
+
+.user-register-inputViewContainer{
+    background-color: white;
+    border-radius: 8px;
+}

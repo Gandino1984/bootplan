@@ -3,7 +3,7 @@ import React from 'react';
 export default function UserView({userName, userAvatar}) {
 
   let userNameString = "Nombre de usuario";
-s
+
   if(userName){
     userNameString = userName;
   }
