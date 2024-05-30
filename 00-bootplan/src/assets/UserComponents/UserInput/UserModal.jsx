@@ -23,7 +23,13 @@ export function UserModal(){
     const [userPassword, setUserPassword] = useState(''); 
     const [userPasswordConfirmation, setUserPasswordConfirmation] = useState('');
 
+    //Haciendo que al darle al boton llame a la api
     function submitBtnHandler(e){
+        if (isRegistered == false) {
+            
+        } else {
+
+        }
       e.preventDefault();
     }
     const formSlideClass = formSlideIsUp ? "animationSlideUp" : "animationSlideDown";
