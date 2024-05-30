@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    margin-bottom: 3vh;
+
+}
+
+#title{
+    margin-right: 5vw;
+}
+
+#info{
+    position: absolute;
+    top: 12vh;
+    left: 5vw;
+    width: 90vw;
+}
+
+#info p{
+    text-align: justify;
+}
