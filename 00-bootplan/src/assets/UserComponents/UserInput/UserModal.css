@@ -1,6 +1,7 @@
 @import "../../../css/animations.css";
 
 .title-userModal{
+    user-select: none;
     animation-name: titleSlideUp;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
