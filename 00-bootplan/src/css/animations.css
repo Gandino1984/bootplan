@@ -14,6 +14,12 @@
     100%{opacity: 1; transform: translateY(0rem);scale: 1;}
 }
 
+@keyframes slideDownModal{
+    0%{opacity: 0; transform: translateY(-5rem); scale: 0.5;}
+    50%{opacity: 0.5; transform: translateY(7rem);scale: 0.7;}
+    100%{opacity: 1; transform: translateY(0rem);scale: 1;}
+}
+
 @keyframes titleSlideUp{
   0%{
     opacity: 0;

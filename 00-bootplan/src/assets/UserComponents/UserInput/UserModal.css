@@ -28,8 +28,18 @@
     justify-content: center;
     padding: .5rem 1rem;
     background-color: white;
-    border-radius: 8px;
+       border-radius: 8px;
+
+}
+
+.animationSlideUp{
     animation: slideUpModal;
+    animation-duration: 700ms;   
+    -webkit-animation-iteration-count: 1;
+}
+
+.animationSlideDown{
+    animation: slideDownModal;
     animation-duration: 700ms;   
     -webkit-animation-iteration-count: 1;
 }
@@ -46,13 +56,6 @@
     /* border: 1px solid red; */
     display: flex;
     align-items: center;
-    justify-content: right;
-    width: 100%;
-}
-
-.user-form-submitBtn{
-    cursor: pointer;
-    border: none;
     font-size: 1rem;
     color: white;
     background-color: #2289E6;
