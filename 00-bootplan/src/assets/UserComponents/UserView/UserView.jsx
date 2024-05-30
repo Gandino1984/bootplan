@@ -1,10 +1,11 @@
 import React from 'react';
-// import { useState } from 'react';
+
+import './UserView.css';  
 
 export default function UserView({userName, userAvatar}) {
 
   let userNameString = "Nombre de usuario";
-s
+
   if(userName){
     userNameString = userName;
   }
@@ -13,7 +14,6 @@ s
     <div className='user-view-article'>
         <img
           className='user-view-avatar'
-          alt='Avatar'
           src={`https://unavatar.io/${userAvatar}`}
         />
         <div className='user-view-userNameContainer'>

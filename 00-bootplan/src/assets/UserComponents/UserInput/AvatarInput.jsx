@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 // import './AvatarInput.css';
 
-export default function AvatarInput({onChange}) {
+export function AvatarInput({onChange}) {
   
   function AvatarInputHandler(e){
     e.preventDefault();
@@ -11,11 +11,17 @@ export default function AvatarInput({onChange}) {
   }
 
   return (
-        <input
-          type="text"
-          onChange={AvatarInputHandler}
-          placeholder="@ <Github/Telegram/Instagram...>"
-        />
+        <>
+          <label for="avatar">Tu Avatar: </label>
+          <input
+            type="text"
+            id="avatar"
+            onChange={AvatarInputHandler}
+            placeholder="@ <Github/Telegram/Instagram...>"
+          />
+        </>
+        
   );
 }
 
+export default AvatarInput;

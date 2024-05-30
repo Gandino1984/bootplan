@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './UserInput.css';
 
 
-export default function UserInput({onChange}) {
+export function UserInput({onChange}) {
   
   function UserInputHandler(e){
     e.preventDefault();
@@ -12,12 +12,21 @@ export default function UserInput({onChange}) {
   }
 
   return (
-        <input
-          type="text"
-          onChange={UserInputHandler}
-          placeholder="Nombre de usuario aquí"
-        />
+    <>
+      <label for="name">Escribe tu nombre aquí: </label>
+      <input
+            type="text"
+            id="name"
+            name="name"
+            onChange={UserInputHandler}
+            placeholder="Nombre"
+      />
+    </>
+    
+
         
   )
 }
+
+export default UserInput;
 
