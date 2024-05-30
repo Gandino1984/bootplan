@@ -38,7 +38,7 @@ export function UserModal(){
                     <button onClick={()=>setIsRegistered(register=>!register)} className='user-register-submitBtn'>{!isRegistered ? "   QUIERO INICIAR SESIÓN" : "QUIERO REGISTRARME"}</button>
                 </div>
                 
-                <h1>{!isRegistered ? "REGISTRO DE USUARIO" : "INICIAR SESIÓN"}</h1>
+                <h2 className='title-userModal'>{!isRegistered ? "REGISTRO DE USUARIO" : "INICIAR SESIÓN"}</h2>
                 
                 <form className='user-register-form'>
                 

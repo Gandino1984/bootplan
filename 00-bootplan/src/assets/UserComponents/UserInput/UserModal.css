@@ -1,10 +1,16 @@
 @import "../../../css/animations.css";
 
+.title-userModal{
+    animation-name: titleSlideUp;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
 .user-register-modalMainContainer{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
     background-color: #0000004d;
     width: 100vw;
     height: 100vh;
@@ -23,7 +29,7 @@
     background-color: white;
     border-radius: 8px;
     animation: slideUpModal;
-    animation-duration: 500ms;   
+    animation-duration: 700ms;   
     -webkit-animation-iteration-count: 1;
 }
 
@@ -44,8 +50,6 @@
 }
 
 .user-form-submitBtn{
-    /* -webkit-appearance: none;
-    appearance: none; */
     cursor: pointer;
     border: none;
     font-size: 1rem;
@@ -64,6 +68,7 @@
 }
 
 .user-register-submitBtn{
+    user-select: none;
     border-radius: 8px;
     justify-content: right ;
     border: none;
