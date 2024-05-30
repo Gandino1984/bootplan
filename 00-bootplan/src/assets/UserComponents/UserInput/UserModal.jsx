@@ -13,10 +13,11 @@ import UserView from '../UserView/UserView.jsx';
 import './UserModal.css';
 
 export function UserModal(){
-
  
     const [isRegistered, setIsRegistered] = useState(false);
-    const [formSlideUp, setFormSlideUp] = useState(true);
+
+    const [formSlideIsUp, setFormSlideUp] = useState(true);
+    
     const [userName, setUserName] = useState('');
     const [userAvatar, setUserAvatar] = useState(''); 
     const [userPassword, setUserPassword] = useState(''); 
@@ -25,14 +26,14 @@ export function UserModal(){
     function submitBtnHandler(e){
       e.preventDefault();
     }
-    const formSlideClass = formSlideUp ? "animationSlideUp" : "animationSlideDown";
+    const formSlideClass = formSlideIsUp ? "animationSlideUp" : "animationSlideDown";
 
     return(
         <div className='user-register-modalMainContainer'>
                 <div className={'user-register-formContainer ' + formSlideClass}>                
                         <div className='user-modalChanger-container'>
                                 <button onClick={()=>setIsRegistered(register=>!register)} className='user-register-submitBtn'>{!isRegistered ? "   QUIERO INICIAR SESIÓN" : "QUIERO REGISTRARME"}</button>
-                                <button onClick={()=>setFormSlideUp(formSlideUp=>!formSlideUp)} className>CAMBIAR</button>
+                                <button onClick={()=>setFormSlideUp(formSlideIsUp=>!formSlideIsUp)} className>X</button>
                         </div>
                         <h2 className='title-userModal'>{!isRegistered ? "REGISTRO DE USUARIO" : "INICIAR SESIÓN"}</h2>
                         <form className='user-register-form'>
