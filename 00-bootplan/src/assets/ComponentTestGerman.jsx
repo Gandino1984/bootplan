@@ -1,11 +1,11 @@
 import "./ComponentTestGerman.css"
 
-import UserRegisterModal from "./UserComponents/UserInput/UserRegisterModal.jsx";
+import UserModal from "./UserComponents/UserInput/UserModal.jsx";
 
  export function ComponentTest(){
     return(
         <div className="ComponentTest-container">
-            <UserRegisterModal /> 
+            <UserModal /> 
         </div>   
     )
 }

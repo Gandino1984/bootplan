@@ -10,10 +10,14 @@ import AvatarInput from './AvatarInput.jsx';
 
 import UserView from '../UserView/UserView.jsx';
 
-import './UserRegisterModal.css';
+import './UserModal.css';
 
-export function UserRegisterModal(){
+export function UserModal(){
 
+    // this is the "state" of the user: decides if we render a register modal or login modal
+    const [userRegistered, setUserRegistered] = useState('false');
+
+    // user registration info
     const [userName, setUserName] = useState('');
 
     const [userAvatar, setUserAvatar] = useState(''); 
@@ -51,4 +55,4 @@ export function UserRegisterModal(){
     );
 }
 
-export default UserRegisterModal;
+export default UserModal;

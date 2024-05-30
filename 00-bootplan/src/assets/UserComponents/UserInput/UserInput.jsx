@@ -22,9 +22,6 @@ export function UserInput({onChange}) {
             placeholder="Nombre"
       />
     </>
-    
-
-        
   )
 }
 
