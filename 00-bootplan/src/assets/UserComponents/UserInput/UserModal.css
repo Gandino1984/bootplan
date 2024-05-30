@@ -28,8 +28,7 @@
     justify-content: center;
     padding: .5rem 1rem;
     background-color: white;
-       border-radius: 8px;
-
+    border-radius: 8px;
 }
 
 .animationSlideUp{
@@ -58,7 +57,7 @@
     align-items: center;
     font-size: 1rem;
     color: white;
-    background-color: #2289E6;
+    /* background-color: #2289E6; */
     padding: .5rem;
     transition: 100ms ease;
 }
@@ -73,25 +72,18 @@
 
 .user-register-submitBtn{
     user-select: none;
-    border-radius: 8px;
     justify-content: right ;
     border: none;
     outline: none;
     appearance: none;
     cursor: pointer;
     color: black;
-    /* font-size: 500; */
-    /* position: absolute; */
-    /* transform: translate(10rem, 15rem); */
-    /* padding: .05rem .5rem; */
-    /* height: 2rem; */
     font-size: .8rem;
     background-color: rgba(48, 48, 242, 0);     
     transition: all 100ms ease;
 }
 
 .user-register-submitBtn:hover{
-    /* font-weight: 600; */
     color:#2289E6;
 }
 
