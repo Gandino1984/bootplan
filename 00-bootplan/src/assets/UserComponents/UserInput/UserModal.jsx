@@ -1,25 +1,19 @@
 import React, { useState } from 'react';
-
 import UserEmailInput from './UserEmailInput.jsx';
-
 import UserInput from './UserInput.jsx';
-
 import UserPasswordInput from './UserPasswordInput.jsx';
-
 import UserPasswordConfirmationInput from './UserPasswordConfirmationInput.jsx';
-
 import AvatarInput from './AvatarInput.jsx';
-
 import UserView from '../UserView/UserView.jsx';
-
 import './UserModal.css';
 
 export function UserModal(){
  
     const [isRegistered, setIsRegistered] = useState(false);
 
-    const [formSlideIsUp, setFormSlideUp] = useState(true);
-    // const [formSlideIsDown, setFormSlideDown] = useState(true);
+    const [formSlideIsUp, setFormSlideUp] = useState(false);
+    const [formSlideIsDown, setFormSlideDown] = useState(true);
+
     const [userEmail, setUserEmail] = useState('');
     const [userName, setUserName] = useState('');
     const [userAvatar, setUserAvatar] = useState(''); 
@@ -29,25 +23,26 @@ export function UserModal(){
     function submitBtnHandler(e){
       e.preventDefault();
     }
-    const formSlideClass = formSlideIsUp ? "animationSlideUp" : "animationSlideDown";
+
+    const formSlideAnimation = formSlideIsDown ? "animationSlideUp" : "animationSlideDown";
 
     return(
-        <div className='user-register-modalMainContainer'>
-                <div className={'user-register-formContainer ' + formSlideClass}>                
-                        <div className='user-modalChanger-container'>
-                                <button onClick={()=>setIsRegistered(register=>!register)} className='user-register-submitBtn'>{!isRegistered ? "   QUIERO INICIAR SESIÓN" : "QUIERO REGISTRARME"}</button>
-                                <button onClick={()=>setFormSlideUp(formSlideIsUp=>!formSlideIsUp)} className>X</button>
+        <div className='userModal-fullscreenBackground'>
+                <div className={'userModal-formContainer ' + formSlideAnimation}>                
+                        <div className='userModal-menuContainer'>
+                                <button className='userModal-formSwitchBtn' onClick={()=>setIsRegistered(register=>!register)} >{!isRegistered ? "INICIAR SESIÓN" : "REGISTRARME"}</button>
+                                <button className='userModal-formCloseBtn' onClick={()=>setFormSlideDown(formSlideIsDown=>!formSlideIsDown)} >-</button>
                         </div>
-                        <h2 className='title-userModal'>{!isRegistered ? "REGISTRO DE USUARIO" : "INICIAR SESIÓN"}</h2>
-                        <form className='user-register-form'>
-                                <div className='userformContainer'>
+                        <h2 className='title-userModal'>{isRegistered ? "INICIAR SESIÓN" : "REGISTRO DE USUARIO"}</h2>
+                        <form className='userModal-form'>
+                                <div className='userModal-inputsContainer'>
                                     <UserEmailInput onChange={setUserEmail} />                                   
                                     <UserInput onChange={setUserName} />
                                     {!isRegistered && <AvatarInput onChange={setUserAvatar} /> }
                                     <UserPasswordInput onChange={setUserPassword} />
                                     {!isRegistered && <UserPasswordConfirmationInput onchange={setUserPasswordConfirmation} /> }
                                 </div>    
-                            <button type="submit" className='user-form-submitBtn' onClick={submitBtnHandler}>{isRegistered ? "INICIO" : "REGISTRARME"}</button>
+                            <button type="submit" className='userModal-submitBtn' onClick={submitBtnHandler}>{isRegistered ? "INICIO" : "REGISTRARME"}</button>
                         </form> 
                         <UserView userName={userName} userAvatar={userAvatar} />            
                 </div>
