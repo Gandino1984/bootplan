@@ -1,3 +1,5 @@
+@import "../../../css/animations.css";
+
 .user-view-article{
     display: flex;
     align-items: center;
@@ -7,7 +9,7 @@
     border-radius: 9px;
     padding: .5rem;
     animation-name: showUserView;
-    animation-duration: 2.8s;
+    animation-duration: 2.9s;
     -webkit-animation-iteration-count: 1;
 }
 
@@ -32,9 +34,5 @@
     opacity: .65;
 }
 
- 
- @keyframes showUserView {
-    0%   {opacity: 0;}
-    100% {opacity: 1;}
-  }
+
    

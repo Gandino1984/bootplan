@@ -1,3 +1,5 @@
+@import "../../../css/animations.css";
+
 .user-register-modalMainContainer{
     display: flex;
     align-items: center;
@@ -48,8 +50,3 @@
     background-color: rgb(48, 48, 242);
 }
 
-@keyframes slideUpModal{
-    0%{opacity: 0; transform: translateY(5rem); scale: 0.5;}
-    50%{opacity: 0.5; transform: translateY(-5rem);scale: 0.5;}
-    100%{opacity: 1; transform: translateY(0rem);scale: 1;}
-}
