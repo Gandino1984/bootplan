@@ -8,7 +8,6 @@ input[type=text]
 input:focus[type=text]
 {    
     color: black;
-    border: 2px solid black;
     font-weight: 500;
     background-color: #B0DBB2;
 }
