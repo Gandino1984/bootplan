@@ -14,11 +14,9 @@ import './UserModal.css';
 
 export function UserModal(){
 
-    // this is the "state" of the user: decides if we render a register modal or login modal
+ 
     const [isRegistered, setIsRegistered] = useState(false);
     const [formSlideUp, setFormSlideUp] = useState(true);
-
-    // user registration info
     const [userName, setUserName] = useState('');
     const [userAvatar, setUserAvatar] = useState(''); 
     const [userPassword, setUserPassword] = useState(''); 
