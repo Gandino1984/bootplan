@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import UserEmailInput from './UserEmailInput.jsx';
+
 import UserInput from './UserInput.jsx';
 
 import UserPasswordInput from './UserPasswordInput.jsx';
@@ -17,7 +19,8 @@ export function UserModal(){
     const [isRegistered, setIsRegistered] = useState(false);
 
     const [formSlideIsUp, setFormSlideUp] = useState(true);
-    
+    // const [formSlideIsDown, setFormSlideDown] = useState(true);
+    const [userEmail, setUserEmail] = useState('');
     const [userName, setUserName] = useState('');
     const [userAvatar, setUserAvatar] = useState(''); 
     const [userPassword, setUserPassword] = useState(''); 
@@ -43,10 +46,11 @@ export function UserModal(){
                         </div>
                         <h2 className='title-userModal'>{!isRegistered ? "REGISTRO DE USUARIO" : "INICIAR SESIÓN"}</h2>
                         <form className='user-register-form'>
-                                <div className='user-register-form'>
+                                <div className='userformContainer'>
+                                    <UserEmailInput onChange={setUserEmail} />                                   
                                     <UserInput onChange={setUserName} />
                                     {!isRegistered && <AvatarInput onChange={setUserAvatar} /> }
-                                    <UserPasswordInput onchange={setUserPassword} />
+                                    <UserPasswordInput onChange={setUserPassword} />
                                     {!isRegistered && <UserPasswordConfirmationInput onchange={setUserPasswordConfirmation} /> }
                                 </div>    
                             <button type="submit" className='user-form-submitBtn' onClick={submitBtnHandler}>{isRegistered ? "INICIO" : "REGISTRARME"}</button>
