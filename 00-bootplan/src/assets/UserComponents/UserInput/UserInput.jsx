@@ -1,48 +1,29 @@
 import React, { useState } from 'react';
-import UserView from '../UserView/UserView.jsx';
 
 import './UserInput.css';
 
 
-export function UserInput() {
-  const [userName, setUserName] = useState('');
-  const [userAvatar, setAvatar] = useState('');
-
+export function UserInput({onChange}) {
   
-
-  const handleUserNameChange = (event) => {
-    setUserName(event.target.value);
-    console.log(event.target.value);
-  };
-
-  const handleAvatarChange = (event) => {
-    setAvatar(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  };
+  function UserInputHandler(e){
+    e.preventDefault();
+    const user = e.target.value;
+    onChange(user);
+  }
 
   return (
-    <div className='user-input-formContainer'>
-      <UserView userName={userName} userHandle={userAvatar}/ >;
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={userName}
-          onChange={handleUserNameChange}
-          placeholder="nombre de usuario"
-        />
-        <input
-          type="text"
-          value={userAvatar}
-          onChange={handleAvatarChange}
-          placeholder="avatar"
-        />
-        <input type="submit" value="CREAR" />
-      </form>
-    </div>
-  );
+    <>
+      {/* <label for="name">Escribe tu nombre aquí: </label> */}
+      <input
+            type="text"
+            id="name"
+            name="name"
+            onChange={UserInputHandler}
+            placeholder="Escribe tu nombre aquí"
+      />
+    </>
+  )
 }
 
 export default UserInput;
+
