@@ -15,7 +15,7 @@ import './UserModal.css';
 export function UserModal(){
 
     // this is the "state" of the user: decides if we render a register modal or login modal
-    const [userRegistered, setUserRegistered] = useState('false');
+    const [isRegistered, setIsRegistered] = useState(false);
 
     // user registration info
     const [userName, setUserName] = useState('');
@@ -34,23 +34,30 @@ export function UserModal(){
         <div className='user-register-modalMainContainer'>
             <div className='user-register-formContainer'>
                 
+                <div className='user-modalChanger-container'>
+                    <button onClick={()=>setIsRegistered(register=>!register)} className='user-register-submitBtn'>{!isRegistered ? "   QUIERO INICIAR SESIÓN" : "QUIERO REGISTRARME"}</button>
+                </div>
+                
+                <h1>{!isRegistered ? "REGISTRO DE USUARIO" : "INICIAR SESIÓN"}</h1>
+                
                 <form className='user-register-form'>
                 
                     <div className='user-register-form'>
                         <UserInput onChange={setUserName} />
-                        <AvatarInput onChange={setUserAvatar} />
+                        {!isRegistered && <AvatarInput onChange={setUserAvatar} /> }
+                        
                         <UserPasswordInput onchange={setUserPassword} />
-                        <UserPasswordConfirmationInput onchange={setUserPasswordConfirmation} />
-                    </div>
-            
-                    <button type='submit' onClick={submitBtnHandler} className='user-register-submitBtn'>REGISTRARME</button>
-                
+                        {!isRegistered && <UserPasswordConfirmationInput onchange={setUserPasswordConfirmation} /> }
+                        
+                    </div>                
+                <button type="submit" className='user-form-submitBtn' onClick={submitBtnHandler}>{isRegistered ? "INICIO" : "REGISTRARME"}</button>
                 </form> 
-                
+
                 <UserView userName={userName} userAvatar={userAvatar} />
+                
             
             </div>
-
+            
         </div>
     );
 }

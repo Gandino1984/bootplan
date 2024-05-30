@@ -12,7 +12,7 @@ export function AvatarInput({onChange}) {
 
   return (
         <>
-          <label for="avatar">Tu Avatar: </label>
+          {/* <label for="avatar">Tu Avatar: </label> */}
           <input
             type="text"
             id="avatar"

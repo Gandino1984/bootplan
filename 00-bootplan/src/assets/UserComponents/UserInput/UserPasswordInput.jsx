@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-// import './UserPasswordInput.css';
+import './UserPasswordInput.css';
 
 
 export function UserPasswordInput({onChange}) {
@@ -13,12 +13,12 @@ export function UserPasswordInput({onChange}) {
 
   return (
         <>
-          <label for="password">Tu contraseña: </label>
+          {/* <label for="password">Crea una contraseña: </label> */}
           <input
             type="password"
             id="password"
             onChange={UserPasswordInputHandler}
-            placeholder="Tu contraseña aquí"
+            placeholder="Crea una contraseña"
           />
         </>
             
