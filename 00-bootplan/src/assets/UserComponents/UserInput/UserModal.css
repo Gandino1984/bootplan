@@ -31,6 +31,17 @@
     border-radius: 8px;
 }
 
+.userformContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 1rem;
+    background-color: white;
+    border-radius: 8px;
+}
+
 .animationSlideUp{
     animation: slideUpModal;
     animation-duration: 700ms;   
