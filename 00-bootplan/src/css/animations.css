@@ -1,3 +1,8 @@
+@keyframes slowlyAppear {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 @keyframes showUserView {
     0%   {opacity: 0;}
     100% {opacity: 1;}
