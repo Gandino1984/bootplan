@@ -14,28 +14,34 @@ export function AvatarProviderSelector({onChange}) {
   return (
     <>
       <div className='avatarProviderSelector-container'>
-        <input
-                type="radio"
-                id="gitHubSelector"
-                name="providerSelector"
-                onChange={AvatarProviderSelectorHandler}
-        />
-        <label htmlFor="gitHubSelector" id="gitHubSelector"><ion-icon name="logo-github"></ion-icon></label>
-        <input
-                type="radio"
-                id="instagramSelector"
-                name="providerSelector"
-                onChange={AvatarProviderSelectorHandler}
-        />
-        <label htmlFor="instagramSelector" id="instagramSelector"><ion-icon name="logo-instagram"></ion-icon></label>
-        <input
-                type="radio"
-                id="twitterSelector"
-                name="providerSelector"
-                onChange={AvatarProviderSelectorHandler}
-        />
-        <label htmlFor="twitterSelector" id="twitterSelector"><ion-icon name="logo-twitter"></ion-icon></label>
+            <div className='avatarProvider-selectorGroup'>
+                        <div className='selector-inputContainer'>
+                                <input type="radio" checked id="gitHubSelector" name="providerSelector" onChange={AvatarProviderSelectorHandler} />
+                                <div className='selector-tileContainer'>
+                                        <ion-icon name="logo-github"></ion-icon>
+                                        {/* <label htmlFor="gitHubSelector" id="gitHubSelector">Github</label> */}
+                                </div>
+                                
+                        </div>
+                        
+                        <div className='selector-inputContainer'>
+                                <input type="radio" id="instagramSelector" name="providerSelector" onChange={AvatarProviderSelectorHandler} />
+                                <div className='selector-tileContainer'>
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                        {/* <label htmlFor="instagramSelector" id="instagramSelector">Instagram</label> */}
+                                </div>
+                        </div>
+                        
+                        <div className='selector-inputContainer'>
+                                <input type="radio" id="twitterSelector" name="providerSelector" onChange={AvatarProviderSelectorHandler} />
+                                <div className='selector-tileContainer'>
+                                        <ion-icon name="logo-google"></ion-icon>
+                                        {/* <label htmlFor="twitterSelector" id="twitterSelector">Google</label> */}
+                                </div>
+                        </div>
 
+            </div>
+            
       </div>
       
     </>
