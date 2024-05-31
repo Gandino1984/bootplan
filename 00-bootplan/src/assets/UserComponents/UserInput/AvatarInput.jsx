@@ -17,7 +17,7 @@ export function AvatarInput({onChange}) {
             type="text"
             id="avatar"
             onChange={AvatarInputHandler}
-            placeholder="@ <Github/Telegram/Instagram...>"
+            placeholder="@ <Tu cuenta aquí> Selecciona un proveedor"
           />
         </>
         
