@@ -14,13 +14,13 @@ export function ProjectDescriptionInput({onChange}) {
   return (
     <>
       <input
-            type="textarea"
-            id="description"
-            name="description"
-            rows="4"
-            cols="50"
-            onChange={ProjectDescriptionInputHandler}
-            placeholder="Escribe una descripción del proyecto"
+             type="textarea"
+             id="description"
+             name="description"
+             rows="10"
+             cols="10"
+             onChange={ProjectDescriptionInputHandler}
+             placeholder="Escribe una descripción del proyecto"
       />
     </>
   )

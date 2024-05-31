@@ -7,8 +7,8 @@ import ProjectModal from "./ProyectComponents/projectModal/ProjectModal.jsx";
  export function ComponentTest(){
     return(
         <div className="ComponentTest-container">
-            <ProjectModal />
-            {/* <UserModal /> */}
+            {/* <ProjectModal /> */}
+            <UserModal />
         </div>   
     )
 }
