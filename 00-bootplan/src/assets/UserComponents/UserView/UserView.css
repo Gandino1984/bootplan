@@ -1,0 +1,39 @@
+@import "../../../css/animations.css";
+
+.user-view-article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #acacac2f;
+    font-size: .7rem;
+    border-radius: 9px;
+    padding: .5rem;
+    animation-name: showUserView;
+    animation-duration: 3.1s;
+    -webkit-animation-iteration-count: 1;
+}
+
+.user-view-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: .6rem 1rem;
+}
+
+.user-view-avatar{
+    margin-right: .5rem;
+    padding: .1rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 2.5px solid #222222; 
+}
+
+.user-view-userHandle{
+    opacity: .65;
+}
+
+
+   
