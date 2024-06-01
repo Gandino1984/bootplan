@@ -4,7 +4,7 @@ import UserInput from './UserInput.jsx';
 import UserPasswordInput from './UserPasswordInput.jsx';
 import UserPasswordConfirmationInput from './UserPasswordConfirmationInput.jsx';
 import AvatarInput from './AvatarInput.jsx';
-import ProjectDescriptionInput from '../../ProyectComponents/projectModal/ProjectDescriptionInput.jsx';
+import ProjectDescriptionInput from '../../ProjectComponents/projectModal/ProjectDescriptionInput.jsx';
 import UserView from '../UserView/UserView.jsx';
 import './UserModal.css';
 import { AvatarProviderSelector } from './AvatarProviderSelector.jsx';

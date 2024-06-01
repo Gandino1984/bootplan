@@ -2,9 +2,9 @@ import "./ComponentTestGerman.css"
 
 import UserModal from "./UserComponents/UserInput/UserModal.jsx";
 
-import ProjectModal from "./ProyectComponents/projectModal/ProjectModal.jsx";
+import ProjectModal from "./ProjectComponents/projectModal/ProjectModal.jsx";
 
- import MainProjectPage from "./mainProjectPage/MainProjectPage.jsx";
+ import MainProjectPage from "./MainProjectPage/MainProjectPage.jsx";
 
  export function ComponentTest(){
     return(

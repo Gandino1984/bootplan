@@ -2,24 +2,21 @@ import "./ComponentTestLuis.css"
 
 import UserModal from "./UserComponents/UserInput/UserModal.jsx";
 
-import ProjectModal from "./ProyectComponents/projectModal/ProjectModal.jsx";
+import ProjectModal from "./ProjectComponents/projectModal/ProjectModal.jsx";
 
- import MainProjectPage from "./mainProjectPage/MainProjectPage.jsx";
+import MainProjectPage from "./MainProjectPage/MainProjectPage.jsx";
 
- import HomeInfo from "./HomeComponents/HomeInfo/HomeInfo.jsx";
 
- import CardManager from "./ProyectComponents/CardManager/CardManager.jsx";
-
- export function ComponentTest(){
+ export function ComponentTestLuis(){
     return(
         <div className="ComponentTest-container">
             {/* <ProjectModal /> */}
             {/* <UserModal /> */}
             <MainProjectPage />
-            <HomeInfo />
-            
+            {/* <HomeInfo />
+            <CardManager /> */}
         </div>
     )
 }
 
-export default ComponentTest;
+export default ComponentTestLuis;

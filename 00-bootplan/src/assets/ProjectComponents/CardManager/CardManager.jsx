@@ -1,14 +1,14 @@
 import './CardManager.css';
-import ProyectCard from '../ProyectCard/ProyectCard';
+import ProyectCard from '../ProjectCard/ProyectCard';
 
 export function CardManager({proyectData}){
     return(
         <article>
             <div id='card-manager'>
-                <ProyectCard/>
-                <ProyectCard/>
-                <ProyectCard/>
-                <ProyectCard/>
+                <ProyectCard />
+                <ProyectCard />
+                <ProyectCard />
+                <ProyectCard />
             </div>
         </article>    
     )

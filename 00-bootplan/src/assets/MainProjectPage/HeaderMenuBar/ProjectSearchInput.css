@@ -1,0 +1,15 @@
+input[type=text]
+{   
+    font-size: 1rem;
+    width: 20rem;
+    padding-left: 1rem;
+    border-radius: 5px;
+
+}
+
+input:focus[type=text]
+{    
+    color: #2289E6;
+    font-weight: 500;
+    background-color: white;
+}
