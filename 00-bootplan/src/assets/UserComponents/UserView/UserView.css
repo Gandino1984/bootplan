@@ -4,11 +4,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid white;
-    background-color: #ffffff49;
+    /* border: 2px solid white; */
+    background-color: #ffffff9b;
     font-size: .7rem;
     border-radius: 9px;
-    padding: .5rem;
+    padding: .5rem 1rem;
     animation-name: showUserView;
     animation-duration: 3.1s;
     -webkit-animation-iteration-count: 1;
