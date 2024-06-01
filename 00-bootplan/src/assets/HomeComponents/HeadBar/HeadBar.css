@@ -1,0 +1,9 @@
+#headbar {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5vh;
+    background-color: rgb(176,219,178);
+    border: 2px solid black;
+}
