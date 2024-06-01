@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-// import './AvatarInput.css';
+import './AvatarInput.css';
 
 export function AvatarInput({onChange}) {
   
@@ -12,13 +12,7 @@ export function AvatarInput({onChange}) {
 
   return (
         <>
-          {/* <label for="avatar">Tu Avatar: </label> */}
-          <input
-            type="text"
-            id="avatar"
-            onChange={AvatarInputHandler}
-            placeholder="@ <Github/Telegram/Instagram...>"
-          />
+          <input type="text" id="avatar" onChange={AvatarInputHandler} placeholder="@<Tu avatar aquí>" />
         </>
         
   );

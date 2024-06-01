@@ -13,14 +13,7 @@ export function UserInput({onChange}) {
 
   return (
     <>
-      {/* <label for="name">Escribe tu nombre aquí: </label> */}
-      <input
-            type="text"
-            id="name"
-            name="name"
-            onChange={UserInputHandler}
-            placeholder="Escribe tu nombre aquí"
-      />
+      <input type="text" id="name" name="name" onChange={UserInputHandler} placeholder="Tu nombre aquí" />
     </>
   )
 }
