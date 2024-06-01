@@ -1,0 +1,82 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #B0DBB2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  
+  .menu {
+    position: relative;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .menu-bar {
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+  }
+  
+  .menu-content {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .menu-button:hover + .menu-content,
+  .menu-content:hover {
+    display: block;
+  }
+  
+  .menu-content a {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+  }
+  
+  .menu-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .search-box {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .user-photo {
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .button{
+background-image: url('lupa.png');
+background-size: cover;
+background-color: #B0DBB2;
+border: none;
+width: 23px;
+height: 23px;
+  }
