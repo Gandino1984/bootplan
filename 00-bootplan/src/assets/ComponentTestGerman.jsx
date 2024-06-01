@@ -12,7 +12,7 @@ import ProjectModal from "./ProyectComponents/projectModal/ProjectModal.jsx";
             {/* <ProjectModal /> */}
             {/* <UserModal /> */}
             <MainProjectPage />
-        </div>   
+        </div>
     )
 }
 
