@@ -5,7 +5,7 @@ import BtnRedirect from '../../ButtonComponents/BtnRedirect.jsx';
 export function HomeInfo(){
     return(
         <article id='info'>
-            <div className='header'>
+            <div id='header'>
                 <h2 id='title'>Tus Proyectos</h2>
                 <BtnRedirect Title="Crear Proyecto"/> 
             </div>
