@@ -51,6 +51,7 @@
 .animationSlideDown{
     animation: slideDownModal;
     animation-duration: 700ms;   
+    animation-fill-mode:forwards;
     -webkit-animation-iteration-count: 1;
 }
 

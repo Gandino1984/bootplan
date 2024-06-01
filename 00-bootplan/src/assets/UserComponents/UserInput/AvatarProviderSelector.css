@@ -1,0 +1,79 @@
+.avatarProviderSelector-container{
+    display: flex; 
+    justify-content:center;
+    align-items: center;
+   
+    gap: 2rem;
+}
+
+input[type=radio]
+{   
+    /* border: 1px solid red; */
+    cursor: pointer;
+    /* position: absolute; */
+    width: 2rem;
+    height: 2rem;
+    margin: 0;
+    padding: 0;
+    /* -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none;  */
+    outline: 0;
+    font-size: 1.5rem;
+}
+
+.avatarProvider-selectorGroup{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.selector-inputContainer{
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+}
+
+.selector-inputContainer input{
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    margin: 0;
+    z-index: 2;
+    opacity: 0;
+}
+
+input:checked + .selector-tileContainer{
+    border-radius: 50%;
+    border: 2px solid #2289E6;
+}
+
+.selector-tileContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    padding: .3rem;
+    
+    transition:all 150ms ease
+}
+
+.selector-inputContainer ion-icon{
+    font-size: 2rem;
+}
+
+.selector-inputContainer label{
+    font-size: .8rem;
+}
+
+/* border-radius: 50%;
+border: 2px solid #2289E6; */
+
+
+
+
+

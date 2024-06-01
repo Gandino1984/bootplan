@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import ProjectInput from './ProjectInput.jsx';
 // import UserView from '../../UserComponents/UserView/UserView.jsx';
 import './ProjectModal.css';
+import ProjectDescriptionInput from './ProjectDescriptionInput.jsx';
 
 export function ProjectModal(){
  
     const [formSlideIsUp, setFormSlideUp] = useState(false);
     const [formSlideIsDown, setFormSlideDown] = useState(true);
     const [projectName, setProjectName] = useState('');
+    const [projectDescription, setProjectDescription] = useState('');
        
     function submitProjectBtnHandler(e){
       e.preventDefault();
@@ -27,11 +29,11 @@ export function ProjectModal(){
                                 <div className='projectModal-inputsContainer'>
                                                                        
                                     <ProjectInput onChange={setProjectName} />
-                                    
+                                    <ProjectDescriptionInput onChange={setProjectDescription} />
                                 </div>    
                             <button type="submit" className='ProjectModal-submitBtn' onClick={submitProjectBtnHandler}>CREAR</button>
                         </form> 
-                        {/* <UserView userName={userName} userAvatar={userAvatar} />             */}
+                        
                 </div>
         </div>
     );

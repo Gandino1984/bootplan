@@ -24,6 +24,5 @@ export function ProjectInput({onChange}) {
   )
 
 }
-
-export default UserInput;
+export default ProjectInput;
 
