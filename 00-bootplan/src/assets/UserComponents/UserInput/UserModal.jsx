@@ -9,7 +9,10 @@ import UserView from '../UserView/UserView.jsx';
 import './UserModal.css';
 import { AvatarProviderSelector } from './AvatarProviderSelector.jsx';
 
-export function UserModal(){
+import {register, login} from "../../../utils/fetch.js";
+import { saveToken } from "../../../utils/local.js";
+
+export function UserModal (){
  
     const [isRegistered, setIsRegistered] = useState(false);
 
@@ -22,15 +25,33 @@ export function UserModal(){
     const [userAvatarProviderSelector, setUserAvatarProviderSelector] = useState(''); 
     const [userPassword, setUserPassword] = useState(''); 
     const [userPasswordConfirmation, setUserPasswordConfirmation] = useState('');
+    const [error,setError] = useState("");
 
     //Haciendo que al darle al boton llame a la api
-    function submitBtnHandler(e){
-        if (isRegistered == false) {
-            
-        } else {
-
-        }
+    const handleSubmit = async(e)=>{
       e.preventDefault();
+      let result
+        if (isRegistered) {
+            result = await login(userName, userPassword)  
+            if(!result.error){
+                setIsRegistered(false);
+                setError("usuario registrado correctamente");
+            }
+            else{
+                setError(result.error);
+            }            
+        } else {
+            result = await register(userEmail, userName, userPassword, userPasswordConfirmation) 
+            if(!result.error){
+                setError("login correcto");
+                saveToken(result.token);
+          
+            }
+            else{
+                setError(result.error);
+            }                     
+        }
+        console.log("resultado", result)
     }
 
     const formSlideAnimation = formSlideIsDown ? "animationSlideUp" : "animationSlideDown";
@@ -43,16 +64,18 @@ export function UserModal(){
                                 <button className='userModal-formCloseBtn' onClick={()=>setFormSlideDown(formSlideIsDown=>!formSlideIsDown)} >-</button>
                         </div>
                         <h2 className='title-userModal'>{isRegistered ? "INICIAR SESIÓN" : "REGISTRO DE USUARIO"}</h2>
-                        <form className='userModal-form'>
+                        {error}
+                        <form className='userModal-form' onSubmit={handleSubmit}>
                                 <div className='userModal-inputsContainer'>
                                     <UserEmailInput onChange={setUserEmail} />                                   
                                     <UserInput onChange={setUserName} />
                                     {!isRegistered && <AvatarInput onChange={setUserAvatar} /> }
                                     {!isRegistered && <AvatarProviderSelector onChange={setUserAvatarProviderSelector} /> }
                                     <UserPasswordInput onChange={setUserPassword} />
-                                    {!isRegistered && <UserPasswordConfirmationInput onchange={setUserPasswordConfirmation} /> }
+                                    {!isRegistered && <UserPasswordConfirmationInput onChange={setUserPasswordConfirmation} /> }
+                                    
                                 </div>    
-                            <button type="submit" className='userModal-submitBtn' onClick={submitBtnHandler}>{isRegistered ? "INICIO" : "REGISTRARME"}</button>
+                            <button type="submit" className='userModal-submitBtn' >{isRegistered ? "INICIO" : "REGISTRARME"}</button>
                         </form> 
                         <UserView userName={userName} userAvatar={userAvatar} />            
                 </div>

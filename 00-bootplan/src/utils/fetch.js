@@ -36,6 +36,7 @@ const fetchData = async(route,method,inputData=null)=>{
 
 const register = async(email,username,password,passwordRepeat)=>{
     const data = {email,username,password,passwordRepeat};
+    console.log("data:", data)
     const result = await fetchData("/register","post",data);
     console.log(result);
     return result;

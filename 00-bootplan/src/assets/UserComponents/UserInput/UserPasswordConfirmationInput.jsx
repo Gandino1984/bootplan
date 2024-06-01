@@ -7,12 +7,18 @@ export function UserPasswordConfirmationInput({onChange}) {
   
   function UserPasswordConfirmationInputHandler(e){
     e.preventDefault();
-    const password = e.target.value;
-    onChange(password);
+    const passwordRepeat = e.target.value;
+    onChange(passwordRepeat);
   }
 
   return (
-        <input type="password" onChange={UserPasswordConfirmationInputHandler} placeholder="Confirma tu contraseña" />    
+        <input 
+        type="password" 
+        id="passwordRepeat" 
+        name="passwordRepeat"
+        onChange={UserPasswordConfirmationInputHandler} 
+        placeholder="Confirma tu contraseña" 
+        />    
   );
 }
 
