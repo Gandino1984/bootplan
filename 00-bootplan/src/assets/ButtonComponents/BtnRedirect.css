@@ -1,9 +1,13 @@
 .btn{
-    background-color: rgba(34, 139, 230, 0.8);
-    border-radius: 10px;
+    background-color: rgb(34,137,230) !important;
+    border-radius: 5px;
     color: white;
+    border: 2px solid rgb(34,137,230);
+    font-weight: bolder;
+    padding: 1vh 2vw;
 }
 
 .btn:hover{
-    background-color: rgb(34,137,230);
+    cursor: pointer;
+    background-color: rgba(34, 139, 230, 0.9) !important;
 }

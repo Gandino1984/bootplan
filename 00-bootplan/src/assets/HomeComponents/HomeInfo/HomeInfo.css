@@ -5,14 +5,14 @@
 }
 
 #title{
-    margin-right: 5vw;
+    margin-right: 2.5vw;
 }
 
 #info{
-    position: absolute;
-    top: 12vh;
-    left: 5vw;
-    width: 90vw;
+    width: 90%;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    margin-left: 5vw;
 }
 
 #info p{

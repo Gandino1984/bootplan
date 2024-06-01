@@ -3,7 +3,7 @@ import ProyectCard from '../ProyectCard/ProyectCard';
 
 export function CardManager({proyectData}){
     return(
-        <article>
+        <article id='show-space'>
             <div id='card-manager'>
                 <ProyectCard/>
                 <ProyectCard/>
