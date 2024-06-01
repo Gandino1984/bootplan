@@ -17,7 +17,7 @@ export default function UserView({userName, userAvatar}) {
           src={`https://unavatar.io/${userAvatar}`}
         />
         <div className='user-view-userNameContainer'>
-          <h1 className='user-view-userName'>{userNameString}</h1>
+          <span className='user-view-userName'>{userNameString}</span>
           <h3 className='user-view-userHandle'>@{userAvatar}</h3>
         </div>
     </div>

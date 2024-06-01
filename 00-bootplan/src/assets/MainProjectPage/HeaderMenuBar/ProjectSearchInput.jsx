@@ -13,7 +13,8 @@ export function ProjectSearchInput({onChange}) {
 
   return (
     <>
-      <input type="text" id="projectSearch" name="projectSearh" onChange={ProjectSearchInputHandler} placeholder="Nombre del proyecto" />
+      {/* <span className='projectSearchLabel'>Buscar proyecto: </span> */}
+      <input className='projectSearchInput' type="text" id="projectSearch" name="projectSearh" onChange={ProjectSearchInputHandler} placeholder="Buscar proyecto" />
     </>
   )
 }
