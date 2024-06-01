@@ -1,31 +1,26 @@
 .card{
-    width: 40vw;
+    width: 42%;
     background-color: rgba(211, 211, 211, 0.6);
     border-radius: 10px;
+    margin-bottom: 10vh;
+    margin-left: 0px;
+
 }
 
 .card div{
     display: flex;
     justify-content: space-evenly;
+    margin-left: 0px;
 }
 
 .card p{
     text-align: justify;
 }
 
-.btn{
-    background-color: rgba(34, 139, 230, 0.8);
-    border-radius: 10px;
-    color: white;
-}
-
-.btn:hover{
-    background-color: rgb(34,137,230);
-}
-
 .card h2{
     padding-top: 2vh;
     padding-bottom: 2vh;
+    margin-left: 0px;
 }
 
 .card h4{
