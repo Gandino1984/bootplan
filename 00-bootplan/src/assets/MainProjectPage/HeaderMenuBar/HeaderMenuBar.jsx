@@ -9,10 +9,14 @@ function HeaderMenuBar(){
     
     return (
         <div className="headerMenuBar-container">
-            <UserView className='headerMenuBar-userView'/>
+            <div className='headerMenuBar-userSectionContainer'>
+                <ion-icon name="person-add-outline"></ion-icon>
+                <UserView className='headerMenuBar-userView'/>
+            </div>
+            
             <div className='headerMenuBar-titleContainer'>
-                <span className='headerMenuBar-title'>PROYECTOS</span>
-                <ion-icon name="add"></ion-icon>
+                <span className='headerMenuBar-title'>BOOTPLAN</span>
+                <button className='headerMenuBar-newProjectBtn'><ion-icon name="add"></ion-icon>NUEVO PROYECTO</button>
             </div>
             <div className='headerMenuBar-projectSearchContainer'>
                 <ProjectSearchInput onChange={setProjectNameSearch} />
