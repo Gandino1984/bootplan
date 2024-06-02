@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import './MainProjectPage.css'
-import BarraBusqueda from '../ProyectComponents/BarraBusqueda/BarraBusqueda.jsx';
+
+import Barra1 from '../ProyectComponents/BarraBusqueda/BarraBusqueda1.jsx';
+
+import Barra2 from '../ProyectComponents/BarraBusqueda/BarraBusqueda2.jsx';
+
 import HomeInfo from '../HomeComponents/HomeInfo/HomeInfo.jsx';
 import CardManager from '../ProyectComponents/CardManager/CardManager.jsx';
 
@@ -10,7 +14,8 @@ export function MainProjectPage() {
   return (
         <>
           <section>
-            <BarraBusqueda />
+            <Barra1 />
+            <Barra2 />
             <HomeInfo />
             <CardManager />
           </section>
