@@ -9,21 +9,10 @@ import UserView from '../UserView/UserView.jsx';
 
 import './UserModal.css';
 
-export function UserModal({userModalState}){
- 
+export function UserModal({userModalState, userModalCloseBtnHandler}){
     const [isRegistered, setIsRegistered] = useState(false);
-
     let formAnimation = "";
-
-    if(userModalState == "on"){
-        formAnimation = "animationSlideUp";  
-        console.log("UserModal: formAnimation: ", formAnimation);   
-    }else{
-        formAnimation = "animationSlideDown";
-        console.log("UserModal: formAnimation: ", formAnimation);
-    }
-    // const [formSlideIsUp, setFormSlideUp] = useState(false);
-    // const [formSlideIsDown, setFormSlideDown] = useState(true);
+    let backgroundClass = '';
 
     const [userEmail, setUserEmail] = useState('');
     const [userName, setUserName] = useState('');
@@ -32,31 +21,40 @@ export function UserModal({userModalState}){
     const [userPassword, setUserPassword] = useState(''); 
     const [userPasswordConfirmation, setUserPasswordConfirmation] = useState('');
 
+    if(userModalState){
+        backgroundClass = 'userModal-fullscreenBackground show';
+        formAnimation = "animationSlideUp";
+    }else{
+        backgroundClass = 'userModal-fullscreenBackground hide';
+        formAnimation = "animationSlideDown";
+    }
 
-    //Haciendo que al darle al boton llame a la api
     function submitBtnHandler(e){
         e.preventDefault();
-        // if (isRegistered == false) {
-            
-        // } else {
-
-        // }
     }
 
-    function userModalCloseBtnHandler(e){
-        e.preventDefault();
-        if(userModalState == true){
-            formAnimation = "animationSlideDown";  
-            console.log("userModalCloseBtnHandler: formAnimation -> ", formAnimation);   
-        }
+    function closeBtnHandler(e){
+        // if(!userModalIsOpen){
+        //     setUserModalIsOpen(true);   
+        //     formAnimation = "animationSlideUp";
+        //     backgroundClass = 'userModal-fullscreenBackground show';
+            
+        
+        // }else{
+        //     setUserModalIsOpen(false);
+        //     formAnimation = "animationSlideDown";
+        //     backgroundClass = 'userModal-fullscreenBackground hide';
+        // }
+        userModalCloseBtnHandler()
     }
     
+   
     return(
-        <div className={!userModalState ? 'userModal-fullscreenBackground ' + "hide" : 'userModal-fullscreenBackground ' + "show" }>
+        <div className={backgroundClass}>
                 <div className={'userModal-formContainer ' + formAnimation}>                
                         <div className='userModal-menuContainer'>
                                 <button className='userModal-formSwitchBtn' onClick={()=>setIsRegistered(register=>!register)} > {!isRegistered ? "INICIAR SESIÓN" : "REGISTRARME"} </button>
-                                <button className='userModal-formCloseBtn' onClick={userModalCloseBtnHandler} >-</button>
+                                <button className='userModal-formCloseBtn' onClick={closeBtnHandler} >-</button>
                         </div>
                         <h2 className='title-userModal'>{isRegistered ? "INICIAR SESIÓN" : "REGISTRO DE USUARIO"}</h2>
                         <form className='userModal-form'>

@@ -1,26 +1,26 @@
 @import "../../../css/animations.css";
 
+.userModal-fullscreenBackground{
+    position: absolute;
+    z-index: 20;
+    display: none;
+    align-items: center; 
+    transform: translateY(50%);
+    justify-content: center;
+    flex-direction: column; 
+    background-color: #0000009d;
+    width: 100vw;
+    height: 100vh;
+    animation-name: slowlyAppear;
+    animation-duration: 1.8s;
+    -webkit-animation-iteration-count: 1;
+}
+
 .title-userModal{
     user-select: none;
     animation-name: titleSlideUp;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
-}
-
-.userModal-fullscreenBackground{
-    position: absolute;
-    z-index: 20;
-    display: flex;
-    align-items: center; 
-    transform: translateY(50%);
-    justify-content: center;
-    flex-direction: column; 
-    background-color: #6d8c6fa7;
-    width: 100vw;
-    height: 100vh;
-    animation-name: slowlyAppear;
-    animation-duration: 2s;
-    -webkit-animation-iteration-count: 1;
 }
 
 .userModal-formContainer{
@@ -144,8 +144,10 @@
 
 .show{
     display: flex;
+    opacity: 1;
 }
 
 .hide{
     display: none;
+    opacity: 0;
 }

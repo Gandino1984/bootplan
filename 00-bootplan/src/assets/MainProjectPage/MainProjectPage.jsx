@@ -10,14 +10,16 @@ export function MainProjectPage(){
   
   const [userModalState, setUserModalState] = useState(false);
 
-  console.log("MainProject: initial UserModalState: ", userModalState);
-
   function userRegisterBtnClickHandler(e){
-    
     if (userModalState == false){
       setUserModalState(true);
-      console.log("MainProject: userRegisterBtnClickHandler changes UserModalState: ", userModalState);
+      console.log("MainProjectPage: userModalState = true");
     } 
+  }
+
+  function userModalCloseBtnHandler(e){
+      setUserModalState(false);
+      console.log("Main Project Page: userModalState = false");
   }
   
   return (
@@ -25,7 +27,7 @@ export function MainProjectPage(){
             <div className="mainProjectPage-header">
                 <button onClick={userRegisterBtnClickHandler} className='headerMenuBar-newUserBtn'><ion-icon name="person-add"></ion-icon></button>
                 <HeaderMenuBar />
-                <UserModal userModalState={userModalState} className='userModal' />  
+                <UserModal userModalState={userModalState} userModalCloseBtnHandler={userModalCloseBtnHandler} className='userModal' />  
             </div>
         </div>
   )
