@@ -1,13 +1,13 @@
 @import "../../../css/animations.css";
 
-.title-userModal{
+.title-projectModal{
     user-select: none;
     animation-name: titleSlideUp;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
 }
 
-.userModal-fullscreenBackground{
+.projectModal-fullscreenBackground{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,7 +20,7 @@
     -webkit-animation-iteration-count: 1;
 }
 
-.userModal-formContainer{
+.projectModal-formContainer{
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -31,7 +31,7 @@
     border-radius: 8px;
 }
 
-.userModal-inputsContainer{
+.projectModal-inputsContainer{
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -51,11 +51,10 @@
 .animationSlideDown{
     animation: slideDownModal;
     animation-duration: 700ms;   
-    animation-fill-mode:forwards;
     -webkit-animation-iteration-count: 1;
 }
 
-.userModal-form{
+.projectModal-form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,7 +62,7 @@
     gap: 1rem;
 }
 
-.userModal-menuContainer{
+.projectModal-menuContainer{
     /* border: 1px solid red; */
     display: flex;
     align-items: center;
@@ -76,7 +75,7 @@
     transition: 100ms ease;
 }
 
-.userModal-submitBtn{
+.projectModal-submitBtn{
     cursor: pointer;
     appearance: none;
     border: none;
@@ -89,14 +88,14 @@
     transition: all 100ms ease;
 }
 
-.userModal-submitBtn:hover{
+.projectModal-submitBtn:hover{
     outline: 2px solid black;
     border-radius: 5px;
     background-color: #B0DBB2;
     color: black;
 }
 
-.userModal-formSwitchBtn{
+.projectModal-formSwitchBtn{
     user-select: none;
     justify-content: right;
     border: none;
@@ -109,11 +108,11 @@
     transition: all 100ms ease;
 }
 
-.userModal-formSwitchBtn:hover{
+.projectModal-formSwitchBtn:hover{
     color:#2289E6;
 }
 
-.userModal-formCloseBtn{
+.projectModal-formCloseBtn{
     user-select: none;
     border: none;
     outline: none;
@@ -133,7 +132,7 @@
     transition: all 100ms ease;
 }
 
-.userModal-formCloseBtn:hover{
+.projectModal-formCloseBtn:hover{
     outline: 2px solid black;
     border-radius: 5px;
     background-color: #B0DBB2;

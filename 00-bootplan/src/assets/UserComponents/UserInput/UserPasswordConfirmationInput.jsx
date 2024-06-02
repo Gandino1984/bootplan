@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-// import './UserPasswordConfirmationInput.css';
+import './UserPasswordConfirmationInput.css';
 
 
 export function UserPasswordConfirmationInput({onChange}) {
@@ -12,11 +12,7 @@ export function UserPasswordConfirmationInput({onChange}) {
   }
 
   return (
-        <input
-          type="password"
-          onChange={UserPasswordConfirmationInputHandler}
-          placeholder="Confirma tu contraseña"
-        />    
+        <input type="password" onChange={UserPasswordConfirmationInputHandler} placeholder="Confirma tu contraseña" />    
   );
 }
 
