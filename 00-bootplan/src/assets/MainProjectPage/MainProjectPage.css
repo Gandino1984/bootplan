@@ -1,0 +1,38 @@
+.mainProjectPage-mainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.mainProjectPage-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+.userModal{
+    position: absolute;
+    z-index: 10;
+}
+
+.headerMenuBar-newUserBtn{
+    position: absolute;
+    z-index: 5;
+    border-radius: 50%;
+    left: 0;
+    margin-left: 2.5rem;
+    transform: translateY(4rem);
+    cursor: pointer;
+    transition: all 150ms ease;
+}
+
+.headerMenuBar-newUserBtn ion-icon{
+ font-size: 1.5rem;
+}
+
+.headerMenuBar-newUserBtn:hover{
+    border-radius: 8px;
+    background-color: #2289E6;
+    color: white;
+}

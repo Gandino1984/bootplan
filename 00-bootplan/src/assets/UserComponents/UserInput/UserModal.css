@@ -8,11 +8,14 @@
 }
 
 .userModal-fullscreenBackground{
-    display: flex;
-    align-items: center;
+    position: absolute;
+    z-index: 3;
+    display: none;
+    align-items: center; 
+    transform: translateY(50%);
     justify-content: center;
     flex-direction: column; 
-    background-color: #0000004d;
+    background-color: #6d8c6fa7;
     width: 100vw;
     height: 100vh;
     animation-name: slowlyAppear;
