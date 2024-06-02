@@ -9,12 +9,22 @@ import UserView from '../UserView/UserView.jsx';
 import './UserModal.css';
 import { AvatarProviderSelector } from './AvatarProviderSelector.jsx';
 
-export function UserModal(){
+export function UserModal({userModalState}){
  
+    let formAnimation = userModalState;
+
+    if(userModalState == "on"){
+        formAnimation = "animationSlideUp";  
+        console.log("Initial formAnimation: ", formAnimation);   
+    }else{
+        formAnimation = "animationSlideDown";
+        console.log("Initial formAnimation: ", formAnimation);
+    }
+
     const [isRegistered, setIsRegistered] = useState(false);
 
-    const [formSlideIsUp, setFormSlideUp] = useState(false);
-    const [formSlideIsDown, setFormSlideDown] = useState(true);
+    // const [formSlideIsUp, setFormSlideUp] = useState(false);
+    // const [formSlideIsDown, setFormSlideDown] = useState(true);
 
     const [userEmail, setUserEmail] = useState('');
     const [userName, setUserName] = useState('');
@@ -22,6 +32,7 @@ export function UserModal(){
     const [userAvatarProviderSelector, setUserAvatarProviderSelector] = useState(''); 
     const [userPassword, setUserPassword] = useState(''); 
     const [userPasswordConfirmation, setUserPasswordConfirmation] = useState('');
+
 
     //Haciendo que al darle al boton llame a la api
     function submitBtnHandler(e){
@@ -33,14 +44,21 @@ export function UserModal(){
       e.preventDefault();
     }
 
-    const formSlideAnimation = formSlideIsDown ? "animationSlideUp" : "animationSlideDown";
+    function formCloseBtnHandler(e){
+        e.preventDefault();
+        if(userModalState == "on"){
+            formAnimation = "animationSlideUp";  
+            console.log("formAnimation: ", formAnimation);   
+        }
+    }
+    
 
     return(
         <div className='userModal-fullscreenBackground'>
-                <div className={'userModal-formContainer ' + formSlideAnimation}>                
+                <div className={'userModal-formContainer ' + formAnimation}>                
                         <div className='userModal-menuContainer'>
                                 <button className='userModal-formSwitchBtn' onClick={()=>setIsRegistered(register=>!register)} >{!isRegistered ? "INICIAR SESIÓN" : "REGISTRARME"}</button>
-                                <button className='userModal-formCloseBtn' onClick={()=>setFormSlideDown(formSlideIsDown=>!formSlideIsDown)} >-</button>
+                                <button className='userModal-formCloseBtn' onClick={formCloseBtnHandler} >-</button>
                         </div>
                         <h2 className='title-userModal'>{isRegistered ? "INICIAR SESIÓN" : "REGISTRO DE USUARIO"}</h2>
                         <form className='userModal-form'>
