@@ -9,8 +9,8 @@
 
 .userModal-fullscreenBackground{
     position: absolute;
-    z-index: 3;
-    display: none;
+    z-index: 20;
+    display: flex;
     align-items: center; 
     transform: translateY(50%);
     justify-content: center;
@@ -54,7 +54,6 @@
 .animationSlideDown{
     animation: slideDownModal;
     animation-duration: 700ms;   
-    animation-fill-mode:forwards;
     -webkit-animation-iteration-count: 1;
 }
 
@@ -143,3 +142,10 @@
     color: black;
 }
 
+.show{
+    display: flex;
+}
+
+.hide{
+    display: none;
+}

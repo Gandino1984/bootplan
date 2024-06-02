@@ -6,15 +6,18 @@ import HeaderMenuBar from "./HeaderMenuBar/HeaderMenuBar.jsx";
 import UserModal from "../UserComponents/UserInput/UserModal.jsx";
 
 
-export function MainProjectPage() {
-  const [userModalState, setUserModalState] = useState("off");
+export function MainProjectPage(){
+  
+  const [userModalState, setUserModalState] = useState(false);
+
+  console.log("MainProject: initial UserModalState: ", userModalState);
 
   function userRegisterBtnClickHandler(e){
-    if (userModalState == "off"){
-      setUserModalState("on");
-    } else {
-      setUserModalState("off");
-    }
+    
+    if (userModalState == false){
+      setUserModalState(true);
+      console.log("MainProject: userRegisterBtnClickHandler changes UserModalState: ", userModalState);
+    } 
   }
   
   return (
@@ -25,7 +28,6 @@ export function MainProjectPage() {
                 <UserModal userModalState={userModalState} className='userModal' />  
             </div>
         </div>
-  
   )
 }
 
