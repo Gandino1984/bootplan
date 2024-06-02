@@ -11,7 +11,7 @@ import { AvatarProviderSelector } from './AvatarProviderSelector.jsx';
 
 export function UserModal({userModalState}){
  
-    let formAnimation = userModalState;
+    let formAnimation = "";
 
     if(userModalState == "on"){
         formAnimation = "animationSlideUp";  
@@ -47,7 +47,7 @@ export function UserModal({userModalState}){
     function formCloseBtnHandler(e){
         e.preventDefault();
         if(userModalState == "on"){
-            formAnimation = "animationSlideUp";  
+            formAnimation = "animationSlideDown";  
             console.log("formAnimation: ", formAnimation);   
         }
     }

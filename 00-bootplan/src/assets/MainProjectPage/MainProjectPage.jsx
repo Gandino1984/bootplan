@@ -18,10 +18,13 @@ export function MainProjectPage() {
   }
   
   return (
-        <>
-             <HeaderMenuBar onLoad={userRegisterBtnClickHandler} />
-             <UserModal onLoad={userModalState} className='userModal' />  
-        </>
+        <div className='mainProjectPage-mainContainer'>
+            <div className="mainProjectPage-header">
+                <button onClick={userRegisterBtnClickHandler} className='headerMenuBar-newUserBtn'><ion-icon name="person-add"></ion-icon></button>
+                <HeaderMenuBar />
+                <UserModal userModalState={userModalState} className='userModal' />  
+            </div>
+        </div>
   
   )
 }

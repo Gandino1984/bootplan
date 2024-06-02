@@ -17,6 +17,23 @@
     gap: 1rem;
 }
 
+.headerMenuBar-newUserBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    appearance: none;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    background-color: white;
+    color: black;
+    transition: all 150ms ease;
+}
+
 .headerMenuBar-userSectionContainer ion-icon{
     display: flex;
     align-items: center;
