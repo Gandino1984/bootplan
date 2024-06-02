@@ -1,5 +1,5 @@
 import { getToken } from "./local";
-const API_URL = "https://api.qtrello.tbfsb.com/api";
+const API_URL = "https://api.preguntapi.tbfsb.com/api";
 
 const fetchData = async(route,method,inputData=null)=>{
     const url = new URL(API_URL + route);

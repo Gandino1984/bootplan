@@ -1,8 +1,7 @@
 import "./ComponentTestLuis.css"
 import { useState } from "react";
 
-import UserModal from "./UserComponents/UserInput/UserModal.jsx";
-import MainProjectPage from "./mainProjectPage/MainProjectPage.jsx";
+import UserModal from "./UserComponents/UserInput/UserRegisterModal.jsx";
 
 export function ComponentTest(){
     return(
