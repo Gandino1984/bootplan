@@ -1,11 +1,11 @@
 import "./ComponentTestAitor.css"
 
-import Barra1 from "./ProyectComponents/BarraBusqueda/BarraBusqueda1.jsx";
+import Barra2 from "./ProyectComponents/BarraBusqueda/BarraBusqueda2.jsx";
 
  export function ComponentTestAitor(){
     return(
         <div className="ComponentTest-container">
-            <Barra1 />
+            <Barra2 />
         </div>   
     )
 }
