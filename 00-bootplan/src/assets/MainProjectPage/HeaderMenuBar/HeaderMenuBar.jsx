@@ -5,33 +5,20 @@ import UserModal from '../../UserComponents/UserInput/UserModal';
 
 import './HeaderMenuBar.css';
 
-function HeaderMenuBar({onLoad}) {
+function HeaderMenuBar() {
 
-    const [projectNameSearch, setProjectNameSearch] = useState('');
+    const [projectNameSearch, setProjectNameSearch] = useState("");
 
-    const [registerBtnClicked, setUserRegisterBtnClick] = useState(false);
-
-
-
-    function userRegisterBtnClickHandler(e){
-        
+    function ProjectSearchInputHandler(e){
         e.preventDefault();
-        if (registerBtnClicked == false){
-            setUserRegisterBtnClick(true);
-            onLoad("on");
-            
-        } else {
-            setUserRegisterBtnClick(false);
-            onLoad("off");
-        }
+        const projectSearch = e.target.value;
+        setProjectNameSearch(projectSearch);
     }
     
     return (
         <div className="headerMenuBar-container">
-            <div className='headerMenuBar-userSectionContainer'>
-                <button onClick={userRegisterBtnClickHandler} className='headerMenuBar-newUserBtn'>REGISTRO</button>
-                <UserView className='headerMenuBar-userView'/>
-            </div>
+            
+            <UserView className='headerMenuBar-userView'/>
             
             <div className='headerMenuBar-titleContainer'>
                 <span className='headerMenuBar-title'>BOOTPLAN</span>
