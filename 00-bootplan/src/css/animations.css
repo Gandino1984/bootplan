@@ -20,7 +20,7 @@
     100%{opacity: 0; transform: translateY(5rem);scale: 0.5;}
 }
 
-@keyframes titleSlideUp{
+@keyframes slideDown{
   0%{
     opacity: 0;
     transform: translateY(-2rem);

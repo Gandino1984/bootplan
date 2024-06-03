@@ -4,6 +4,8 @@ import ProjectInput from './ProjectInput.jsx';
 import './ProjectModal.css';
 import ProjectDescriptionInput from './ProjectDescriptionInput.jsx';
 
+	
+
 export function ProjectModal(){
  
     const [formSlideIsUp, setFormSlideUp] = useState(false);

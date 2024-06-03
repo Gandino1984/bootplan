@@ -34,6 +34,7 @@ export function UserModal({userModalState, userModalCloseBtnHandler}){
     }
 
     function closeBtnHandler(e){
+        userModalCloseBtnHandler(e);
         // if(!userModalIsOpen){
         //     setUserModalIsOpen(true);   
         //     formAnimation = "animationSlideUp";
@@ -45,7 +46,6 @@ export function UserModal({userModalState, userModalCloseBtnHandler}){
         //     formAnimation = "animationSlideDown";
         //     backgroundClass = 'userModal-fullscreenBackground hide';
         // }
-        userModalCloseBtnHandler()
     }
     
    

@@ -1,17 +1,19 @@
 .mainProjectPage-mainContainer{
     display: flex;
+  
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
 }
-.mainProjectPage-header{
+
+.mainProjectPage{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
     width: 100%;
 }
+
 .userModal{
     position: absolute;
     z-index: 10;
