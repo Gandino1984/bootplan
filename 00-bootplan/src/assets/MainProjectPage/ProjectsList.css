@@ -1,11 +1,12 @@
 @import '../../css/animations.css';
 
 .project-card{
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: rgb(231, 231, 231);
     padding: 1rem 1rem;
     margin: 1rem 1rem;
     border-radius: 8px;
@@ -14,8 +15,20 @@
     -webkit-animation-iteration-count: 1;
 }
 
-.project-name, .project-owner{
-    font-family: Ubuntu, sans-serif;
+.project-card:hover{
+    outline: 3px solid  #6206BF;
+    animation-name: slideDown;
+    animation-duration: 300ms;
+    -webkit-animation-iteration-count: 1;
+}
+
+.project-name{
+    font-family: roboto;
+    font-size: 1.5rem;
+}
+
+.project-users, .project-owner{
+    font-family: montserrat, sans-serif;
     font-size: 1rem;
     font-weight: 400;
 }
@@ -23,6 +36,7 @@
 .project-list{
     /* transform: translateY(50%); */
     /* height: 100vh; */
+    padding-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;

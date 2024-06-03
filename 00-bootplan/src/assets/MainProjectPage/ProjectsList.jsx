@@ -6,8 +6,8 @@ const ProjectsList = ({projects}) => {
     const projectsHtml = projects.map(project => {
         return (
             <div draggable="true" className="project-card" key={project._id}>
-                <h1>Nombre de proyecto: {project.name}</h1>
-                <div className="project-name">
+                <h1 className="project-name">Nombre de proyecto: {project.name}</h1>
+                <div className="project-users">
                     <p> 
                         Cantidad de usuarios: {project.users.length}
                     </p>

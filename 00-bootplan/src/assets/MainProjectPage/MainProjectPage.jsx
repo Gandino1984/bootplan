@@ -103,12 +103,12 @@ export function MainProjectPage({projects}){
   
   return (
         <div className='mainProjectPage-mainContainer'>
-            <div className="mainProjectPage">
+            <div className="mainProjectPage-header">
                 <button onClick={userRegisterBtnClickHandler} className='headerMenuBar-newUserBtn'><ion-icon name="person-add"></ion-icon></button>
-                <HeaderMenuBar />
-                <ProjectsList className="projects-list" projects={projects} />
-                {userModalState && <UserModal userModalState={userModalState} userModalCloseBtnHandler={userModalCloseBtnHandler} className='userModal' />  }      
+                <HeaderMenuBar />     
             </div>
+            <ProjectsList className="projects-list" projects={projects} />
+            {userModalState && <UserModal userModalState={userModalState} userModalCloseBtnHandler={userModalCloseBtnHandler} className='userModal' />  }      
         </div>
   )
 }

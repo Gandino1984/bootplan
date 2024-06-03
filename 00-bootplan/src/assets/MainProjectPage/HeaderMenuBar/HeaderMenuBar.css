@@ -1,13 +1,25 @@
-.headerMenuBar-container{
-    /* position: absolute;
-    top: 0;
-    z-index: 2; */
+.headerMenuBar-mainContainer{
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    justify-content: space-between;
+    padding: 1.5rem 0rem;
+    /* gap: 2rem; */
+    width: 90%;
+}
+
+.headerMenuBar-container{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+}
+
+
+.headerMenuBar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem 1rem;
-    background-color: #F2A20C;
 }
 
 .headerMenuBar-userSectionContainer{
@@ -25,10 +37,12 @@
     appearance: none;
     border: none;
     outline: none;
-    border-radius: 20px;
-    font-size: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 2rem;
     font-weight: 600;
-    padding: .5rem 1rem;
+    /* padding: .5rem 1rem; */
     background-color: white;
     color: black;
     transition: all 150ms ease;
@@ -48,7 +62,7 @@
 .headerMenuBar-userSectionContainer ion-icon:hover{
     color: white;
     border-radius: 8px;
-    background-color: #2289E6;
+    background-color: #6206BF;
     transition: all 150ms ease;
 }
 
@@ -60,11 +74,14 @@
 }
 
 .headerMenuBar-title{
-    text-shadow: 2px 5px white;
-    font-size: 5.2rem;
+    text-shadow: 4px 5px #8B2703;
+    font-size: 6.3rem;
     font-weight: 1000;
-    letter-spacing: .25rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 2rem;
+    letter-spacing: .25rem;    
+    -webkit-text-stroke-width: 2px;
+    /* -webkit-text-stroke-color: white; */
+    -webkit-text-stroke-color: white;
 }
 
 .headerMenuBar-newProjectBtn{
@@ -76,32 +93,34 @@
     border: none;
     outline: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 30px;
-    font-size: 1.2rem;
-    padding: .5rem .8rem;
+    font-size: 1rem;
+    padding: .5rem .6rem;
+    letter-spacing: .05rem;
     /* background-color: #2289E6; */
     background-color: white;
-    color: black;
+    color: #013A41;
     transition: all 200ms ease
 }
 
 .headerMenuBar-newProjectBtn:hover{
     border-radius: 8px;
-    background-color: #2289E6;
+    background-color: #6206BF;
     color: white;
 }
 
 
 
-.headerMenuBar-projectSearchContainer{
+.headerMenuBar-options{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 4rem;
     gap: 2rem;
 }
 
-.headerMenuBar-container ion-icon{
+.headerMenuBar-options ion-icon{
     cursor: pointer;
     font-size: 3rem;
     /* outline: 2px solid white; */
@@ -116,10 +135,10 @@
     transition: all 150ms ease;
 }
 
-.headerMenuBar-container ion-icon:hover{
+.headerMenuBar-options ion-icon:hover{
 
     color: white;
-    background-color: #2289E6;
+    background-color: #6206BF;
     /* outline: 2px solid black; */
     border-radius: 15px;
 }
@@ -140,7 +159,7 @@
 
 .headerMenuBar-projectSearchContainer ion-icon:hover{
     color: white;
-    background-color: #2289E6;
+    background-color: #6206BF;
     border-radius: 8px;
     /* outline: 2px solid white; */
 }

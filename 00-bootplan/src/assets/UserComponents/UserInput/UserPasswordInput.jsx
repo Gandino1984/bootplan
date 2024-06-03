@@ -18,7 +18,7 @@ export function UserPasswordInput({onChange}) {
             type="password"
             id="password"
             onChange={UserPasswordInputHandler}
-            placeholder="Crea una contraseña"
+            placeholder="Contraseña"
           />
         </>
             

@@ -9,5 +9,6 @@ input:focus[type=text]
 {    
     color: black;
     font-weight: 500;
-    background-color: #B0DBB2;
+    background-color: white;
+    outline: 2px solid #6206BF;
 }

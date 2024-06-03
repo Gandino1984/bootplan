@@ -16,19 +16,21 @@ function HeaderMenuBar() {
     }
     
     return (
-        <div className="headerMenuBar-container">
-            
-            <UserView className='headerMenuBar-userView'/>
-            
+        <div className='headerMenuBar-mainContainer'>
+            <div className='headerMenuBar-userViewContainer'>
+                <UserView className='headerMenuBar-userView'/>
+            </div>
             <div className='headerMenuBar-titleContainer'>
                 <span className='headerMenuBar-title'>BOOTPLAN</span>
-                <button className='headerMenuBar-newProjectBtn'>NUEVO PROYECTO</button>
             </div>
-            <div className='headerMenuBar-projectSearchContainer'>
+            <div className='headerMenuBar-options'>
+                <button className='headerMenuBar-newProjectBtn'>NUEVO PROYECTO</button>
                 <ProjectSearchInput onChange={setProjectNameSearch} />
                 <ion-icon name="search-outline"></ion-icon>
             </div>
+            
         </div>
+        
     );
 }
 

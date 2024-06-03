@@ -47,7 +47,7 @@ input[type=radio]
 
 input:checked + .selector-tileContainer{
     border-radius: 50%;
-    border: 2px solid #2289E6;
+    border: 2px solid #6206BF;
 }
 
 .selector-tileContainer{
