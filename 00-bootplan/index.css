@@ -28,3 +28,42 @@ input:focus[type=text]
     background-color: white;
 }
 
+input[type=password]
+{   border: none;
+    border-radius: 5px;
+    padding: .5rem .5rem;
+    font-size: 1rem;
+    margin-top: .1rem;
+    width: 20rem;
+    padding-left: 1rem;
+    background-color: rgb(218, 218, 218);
+}
+
+input:focus[type=password]
+{    
+    outline: 2px solid #6206BF;
+    color: black;
+    font-weight: 500;
+    background-color: white;
+}
+
+input[type=textarea]
+{   border: none;
+    border-radius: 5px;
+    padding: .5rem .5rem;
+    font-size: 1rem;
+    margin-top: .1rem;
+    width: 20rem;
+    padding-left: 1rem;
+    background-color: rgb(218, 218, 218);
+}
+
+input:focus[type=textarea]
+{    
+    outline: 2px solid #6206BF;
+    color: black;
+    font-weight: 500;
+    background-color: white;
+}
+
+

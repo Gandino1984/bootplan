@@ -9,13 +9,13 @@
     /* transform: translateY(50%); */
     justify-content: center;
     flex-direction: column; 
-    background-color: #0000009d;
+    background-color: #000000b9;
     width: 100vw;
     height: 100vh;
     animation-name: slowlyAppear;
     animation-duration: 1.1s;
     -webkit-animation-iteration-count: 1;
-    transition: all 200ms ease;
+    /* transition: all 200ms ease; */
 }
 
 .title-userModal{

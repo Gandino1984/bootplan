@@ -1,7 +1,7 @@
 .headerMenuBar-mainContainer{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1.5rem 0rem;
     /* gap: 2rem; */
     width: 90%;
@@ -96,7 +96,7 @@
     font-weight: 600;
     border-radius: 30px;
     font-size: 1rem;
-    padding: .5rem .6rem;
+    padding: .5rem .2rem;
     letter-spacing: .05rem;
     /* background-color: #2289E6; */
     background-color: white;

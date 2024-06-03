@@ -35,17 +35,6 @@ export function UserModal({userModalState, userModalCloseBtnHandler}){
 
     function closeBtnHandler(e){
         userModalCloseBtnHandler(e);
-        // if(!userModalIsOpen){
-        //     setUserModalIsOpen(true);   
-        //     formAnimation = "animationSlideUp";
-        //     backgroundClass = 'userModal-fullscreenBackground show';
-            
-        
-        // }else{
-        //     setUserModalIsOpen(false);
-        //     formAnimation = "animationSlideDown";
-        //     backgroundClass = 'userModal-fullscreenBackground hide';
-        // }
     }
     
    

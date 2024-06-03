@@ -5,7 +5,7 @@ import './MainProjectPage.css'
 import HeaderMenuBar from "./HeaderMenuBar/HeaderMenuBar.jsx";
 import UserModal from "../UserComponents/UserInput/UserModal.jsx";
 import ProjectsList from "./ProjectsList.jsx";
-
+import ProjectModal from '../ProjectComponents/projectModal/ProjectModal.jsx';
 
 
 export function MainProjectPage({projects}){
@@ -91,24 +91,35 @@ export function MainProjectPage({projects}){
   ];
 
   const [userModalState, setUserModalState] = useState(false);
+  const [projectModalState, setProjectModalState] = useState(false);
+
 
   function userRegisterBtnClickHandler(userModalState){
       setUserModalState(true); 
   }
 
+  function newProjectBtnClickHandler(projectModalState){
+    setProjectModalState(true); 
+  }
   function userModalCloseBtnHandler(userModalState){
       setUserModalState(false);
-      console.log("Main Project Page: userModalState = false");
   }
+
+  function projectModalCloseBtnHandler(projectModalState){
+    setProjectModalState(false);
+}
   
   return (
         <div className='mainProjectPage-mainContainer'>
             <div className="mainProjectPage-header">
-                <button onClick={userRegisterBtnClickHandler} className='headerMenuBar-newUserBtn'><ion-icon name="person-add"></ion-icon></button>
-                <HeaderMenuBar />     
+                <button onClick={userRegisterBtnClickHandler} className='headerMenuBar-newUserBtn'><ion-icon name="person-add"></ion-icon></button>  
+                <HeaderMenuBar />
+                <button onClick={newProjectBtnClickHandler} className='headerMenuBar-newProjectBtn'>NUEVO PROYECTO</button>
             </div>
             <ProjectsList className="projects-list" projects={projects} />
             {userModalState && <UserModal userModalState={userModalState} userModalCloseBtnHandler={userModalCloseBtnHandler} className='userModal' />  }      
+            {projectModalState && <ProjectModal projectModalState={projectModalState} projectModalCloseBtnHandler={projectModalCloseBtnHandler} className='projectModal' />  }      
+            
         </div>
   )
 }

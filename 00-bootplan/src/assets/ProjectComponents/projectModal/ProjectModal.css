@@ -8,15 +8,19 @@
 }
 
 .projectModal-fullscreenBackground{
+    position: absolute;
+    z-index: 21;
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column; 
-    background-color: #0000004d;
+    background-color: #000000c0;
     width: 100vw;
     height: 100vh;
     animation-name: slowlyAppear;
-    animation-duration: 2s;
+    animation-duration: 1.2s;
     -webkit-animation-iteration-count: 1;
 }
 
@@ -80,37 +84,23 @@
     appearance: none;
     border: none;
     outline: none;
+    font-weight: 600;
+    letter-spacing: .05rem;
     border-radius: 20px;
     font-size: 1rem;
     padding: .5rem 1rem;
-    background-color: #2289E6;
-    color: white;
+    background-color: #F1A008;
+    color: black;
     transition: all 100ms ease;
 }
 
 .projectModal-submitBtn:hover{
-    outline: 2px solid black;
     border-radius: 5px;
-    background-color: #B0DBB2;
-    color: black;
+    background-color: #6206BF;
+    color: white;
 }
 
-.projectModal-formSwitchBtn{
-    user-select: none;
-    justify-content: right;
-    border: none;
-    outline: none;
-    appearance: none;
-    cursor: pointer;
-    color: black;
-    font-size: .8rem;
-    background-color: rgba(48, 48, 242, 0);     
-    transition: all 100ms ease;
-}
 
-.projectModal-formSwitchBtn:hover{
-    color:#2289E6;
-}
 
 .projectModal-formCloseBtn{
     user-select: none;
@@ -121,21 +111,29 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: white;
+    color: black;
     border-radius: 50%;
     font-size: 2rem;
     font-weight: 600;
     width: 2rem;
     height: 2rem;
     line-height: 2rem;
-    background-color:#2289E6;     
+    background-color:#F1A008;     
     transition: all 100ms ease;
 }
 
 .projectModal-formCloseBtn:hover{
-    outline: 2px solid black;
     border-radius: 5px;
-    background-color: #B0DBB2;
-    color: black;
+    background-color: #6206BF;
+    color: white;
 }
 
+.show{
+    display: flex;
+    opacity: 1;
+}
+
+.hide{
+    display: none;
+    opacity: 0;
+}

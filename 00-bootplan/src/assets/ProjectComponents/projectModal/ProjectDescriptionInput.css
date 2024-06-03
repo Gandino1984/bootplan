@@ -1,5 +1,5 @@
 input[type=textarea]
-{   
+{   font-family: roboto;
     margin-top: .1rem;
     width: 100%;
     height: 10rem;
@@ -15,5 +15,5 @@ input:focus[type=textarea]
 {    
     color: black;
     font-weight: 500;
-    background-color: #B0DBB2;
+    /* background-color: #B0DBB2;    */
 }

@@ -24,7 +24,6 @@ function HeaderMenuBar() {
                 <span className='headerMenuBar-title'>BOOTPLAN</span>
             </div>
             <div className='headerMenuBar-options'>
-                <button className='headerMenuBar-newProjectBtn'>NUEVO PROYECTO</button>
                 <ProjectSearchInput onChange={setProjectNameSearch} />
                 <ion-icon name="search-outline"></ion-icon>
             </div>
