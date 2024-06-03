@@ -8,6 +8,11 @@ import UserModal from "../UserComponents/UserInput/UserModal.jsx";
 import Cardmanager from "../ProjectComponents/CardManager/CardManager.jsx";
 
 export function MainProjectPage(){
+
+  // array para almacenar los proyectos temporalmente
+  const projects = [
+    //crear json con proyectos
+    ];
   
   const [userModalState, setUserModalState] = useState(false);
 

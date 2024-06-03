@@ -1,12 +1,14 @@
 import "./ComponentTestGerman.css"
 
 
- import MainProjectPage from "./MainProjectPage/MainProjectPage.jsx";
+import MainProjectPage from "./MainProjectPage/MainProjectPage.jsx";
+import  TaskModal  from "./tasksComponents/TaskModal.jsx";
 
  export function ComponentTestGerman(){
     return(
         <div className="ComponentTest-container">
-            <MainProjectPage />
+            <TaskModal />
+            {/* <MainProjectPage /> */}
         </div>
     )
 }

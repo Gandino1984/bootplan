@@ -13,10 +13,10 @@ export function TaskInput({onChange}) {
 
   return (
     <>
-      <input type="text" id="name" name="name" onChange={taskInputHandler} placeholder="Escribe una tarea" />
+      <input type="text" id="taskName" name="taskName" onChange={taskInputHandler} placeholder="Escribe una tarea" />
     </>
   )
 }
 
-export default UserInput;
+export default TaskInput;
 
