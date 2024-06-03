@@ -1,10 +1,13 @@
 .card{
-    width: 40vw;
+    width: 35%;
     background-color: rgba(211, 211, 211, 0.6);
     border-radius: 10px;
+    margin-top: 10vh;
+    padding: 2vh 2vw;
 }
 
 .card div{
+   
     display: flex;
     justify-content: space-evenly;
 }

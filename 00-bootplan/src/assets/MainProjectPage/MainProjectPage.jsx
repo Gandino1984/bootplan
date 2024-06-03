@@ -5,6 +5,7 @@ import './MainProjectPage.css'
 import HeaderMenuBar from "./HeaderMenuBar/HeaderMenuBar.jsx";
 import UserModal from "../UserComponents/UserInput/UserModal.jsx";
 
+import Cardmanager from "../ProjectComponents/CardManager/CardManager.jsx";
 
 export function MainProjectPage(){
   
@@ -27,7 +28,8 @@ export function MainProjectPage(){
             <div className="mainProjectPage-header">
                 <button onClick={userRegisterBtnClickHandler} className='headerMenuBar-newUserBtn'><ion-icon name="person-add"></ion-icon></button>
                 <HeaderMenuBar />
-                <UserModal userModalState={userModalState} userModalCloseBtnHandler={userModalCloseBtnHandler} className='userModal' />  
+                <UserModal userModalState={userModalState} userModalCloseBtnHandler={userModalCloseBtnHandler} className='userModal' /> 
+                <Cardmanager />
             </div>
         </div>
   )

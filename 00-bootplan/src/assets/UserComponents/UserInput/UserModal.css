@@ -14,6 +14,7 @@
     animation-name: slowlyAppear;
     animation-duration: 1.8s;
     -webkit-animation-iteration-count: 1;
+    transition: all 200ms ease;
 }
 
 .title-userModal{

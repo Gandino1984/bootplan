@@ -3,7 +3,7 @@ import ProyectCard from '../ProjectCard/ProyectCard';
 
 export function CardManager({proyectData}){
     return(
-        <article>
+        <article id="show-cards">
             <div id='card-manager'>
                 <ProyectCard />
                 <ProyectCard />

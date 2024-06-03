@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import TaskInput from './TaskInput.jsx';
 
 import './TaskModal.css';
 
